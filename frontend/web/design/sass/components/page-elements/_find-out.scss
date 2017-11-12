@@ -1,0 +1,24 @@
+.find-out {
+  h2 {
+    @include rem(margin-bottom, 60px);
+    text-align: center;
+  }
+
+  h4 {
+    @include rem(margin-bottom, 15px);
+  }
+
+  &__element {
+    @include rem(margin-bottom, 30px);
+
+    p {
+      @include lh(21, 14);
+      @include rem(font-size, 14px);
+      font-weight: $normal;
+    }
+  }
+
+  &__column_left {
+    @include rem(margin-right, 159px);
+  }
+}

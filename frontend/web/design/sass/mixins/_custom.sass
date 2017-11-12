@@ -1,0 +1,43 @@
+=btn
+  +lh(20, 16)
+  +rem(border-radius, 3px)
+  +rem(font-size, 16px)
+  +rem(padding, 9px 35px 11px 35px)
+  cursor: pointer
+  display: inline-block
+  font-weight: $semi-bold
+
+  &.green
+    background-color: color(btn-green-bg)
+    color: color(btn-green-text)
+
+  &.small
+    +lh(22, 14)
+    +rem(font-size, 14px)
+    +rem(padding, 4px 16px 6px 16px)
+
+  &.transparent
+    background-color: color(bg-white)
+    box-shadow: $main-shadow-small
+    color: color(header-menu)
+
+=slick-dots
+  .slick-dots
+    +rem(bottom, -37px)
+
+    li
+      +rem(height, 8px)
+      +rem(width, 8px)
+
+    button
+      background: color(greyy-dots)
+      border-radius: 50%
+      height: 8px
+      padding: 0
+      width: 8px
+
+      &:before
+        display: none
+
+    .slick-active button
+      background: color(green-dots)

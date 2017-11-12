@@ -1,0 +1,52 @@
+// Colors
+//
+// Use the `color()` function to add colors to CSS properties. To learn more,
+// [read the Chroma documentation](http://johnalbin.github.io/chroma/).
+
+// Define the default color scheme's color names.
+$chroma: define-default-color-scheme('branding', 'The site\'s main colors. Can be used to define colors in other color schemes.');
+
+$chroma: add-colors((
+  black:         #000,
+  black1:        #191919,
+  green:         #16bc02,
+  green1:        #1eb306,
+  green2:        #23b400,
+  greyy:         #fafafa,
+  greyy1:        #bdbdbd,
+  greyy2:        #eeeeee,
+  greyy3:        #333333,
+  greyy4:        #e2e2e2,
+  purple:        #5321a8,
+  white:         #fff,
+  white1:        rgba(255, 255, 255, 0.87),
+));
+
+// Define color names for functional uses.
+$chroma: define-color-scheme('functional', 'Colors used by functional parts of the design.');
+$chroma: add-colors('functional', (
+  // Colors used in the main content area.
+  text:           'black',
+
+  btn-green-bg:     'green',
+  btn-green-text:   'white1',
+
+  bg-white:         'white',
+  footer-bg:        'greyy2',
+  green-dots:       'green',
+  green-company:    'green2',
+  greyy-dots:       'greyy1',
+  header-menu:      'greyy3',
+  header-separator: 'greyy4',
+
+  main-bg:          'greyy',
+  main-black:       'black1',
+  main-green:       'green1',
+  main-purple:      'purple',
+  main-shadow:      'black',
+));
+
+$chroma-active-scheme: 'functional';
+
+$main-shadow-small: 0 0 2px rgba(color(main-shadow), .18);
+$main-shadow-big:   0 0 8px rgba(color(main-shadow), .12);

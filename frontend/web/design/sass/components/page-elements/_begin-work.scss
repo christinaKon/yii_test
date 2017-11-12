@@ -1,0 +1,14 @@
+.begin-work {
+  @include rem(padding, 39px 0);
+  background-color: color(main-bg);
+  box-shadow: $main-shadow-big;
+
+  h2 {
+    @include rem(margin-bottom, 40px);
+    text-align: center;
+  }
+
+  &__button {
+    text-align: center;
+  }
+}

@@ -1,0 +1,64 @@
+.for-experts {
+  @include rem(margin-bottom, 61px);
+  @include rem(margin-top, 96px);
+
+  &__element {
+    &-inner {
+      @include rem(padding, 20px 40px 40px);
+      background-color: color(main-bg);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__first {
+    @include rem(margin-right, 21px);
+    box-shadow: $main-shadow-big;
+
+    .icon {
+      @include sprite($for-jour);
+    }
+  }
+
+  &__last {
+    @include rem(margin-left, 21px);
+    box-shadow: $main-shadow-small;
+
+    .icon {
+      @include rem(margin-top, 19px);
+      @include sprite($for-exp);
+      display: block;
+    }
+  }
+
+  &__for {
+    @include lh(18, 12);
+    @include rem(font-size, 12px);
+    @include rem(margin-bottom, 54px);
+    @include rem(margin-right, 20px);
+    @include rem(margin-top, 27px);
+    color: color(main-green);
+    display: inline-block;
+    font-weight: $bold;
+    text-transform: uppercase;
+  }
+
+  &__description,
+  &__link {
+    @include lh(21, 14);
+    @include rem(font-size, 14px);
+    font-weight: $normal;
+  }
+
+  &__link {
+    width: 100%;
+
+    a {
+      @include rem(margin-top, 19px);
+      color: color(main-purple);
+      display: block;
+      text-align: right;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.statistic {
+  @include rem(margin-bottom, 95px);
+  @include rem(margin-top, 73px);
+  text-align: center;
+
+  p {
+    @include lh(18, 12);
+    @include rem(font-size, 12px);
+    @include rem(margin-bottom, 15px);
+    display: inline-block;
+    font-weight: $bold;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &__count {
+    @include lh(60, 48);
+    @include rem(font-size, 48px);
+    color: color(main-green);
+    font-weight: $normal;
+  }
+
+  &__cell {
+    @include rem(max-width, 197px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

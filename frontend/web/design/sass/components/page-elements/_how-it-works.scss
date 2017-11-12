@@ -1,0 +1,71 @@
+.how-it-works {
+  @include rem(padding, 60px 0);
+  @include slick-dots;
+  background: color(main-bg);
+  box-shadow: $main-shadow-small;
+
+  h2 {
+    text-align: center;
+  }
+
+  .views-row {
+    @include rem(margin-top, 60px);
+    @include rem(padding-left, 36px);
+    @include rem(padding-right, 36px);
+
+    &__inner {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__left,
+  &__right {
+    @include rem(width, 297px);
+
+    &-item {
+      @include rem(border-radius, 3px);
+      background: color(main-bg);
+      box-shadow: $main-shadow-big;
+    }
+
+    &-first {
+      @include rem(margin-bottom, 72px);
+    }
+  }
+
+  &__left-item {
+    @include rem(padding, 22px 17px 22px);
+
+    p {
+      @include rem(padding-right, 41px);
+      background: url('../img/icons/arrow-right.png') no-repeat center right;
+      text-align: right;
+    }
+  }
+
+  &__right-item {
+    @include rem(padding, 22px 22px 22px 17px);
+
+    p {
+      @include rem(padding-left, 41px);
+      background: url('../img/icons/arrow-left.png') no-repeat center left;
+      text-align: left;
+    }
+  }
+
+  &__left-item,
+  &__right-item {
+    &:hover p {
+      color: color(main-purple);
+    }
+  }
+
+  p {
+    @include lh(28, 22);
+    @include rem(font-size, 22px);
+    cursor: default;
+    font-weight: $normal;
+  }
+}

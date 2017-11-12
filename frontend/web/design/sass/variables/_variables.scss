@@ -1,0 +1,15 @@
+// Fonts
+@import url('http://fonts.googleapis.com/css?family=Roboto:400,300,700');
+
+@include font('Roboto', Roboto-Black, 900, normal);
+@include font('Roboto', Roboto-Bold, 700, normal);
+@include font('Roboto', Roboto-Medium, 500, normal);
+@include font('Roboto', Roboto-Italic, 400, italic);
+@include font('Roboto', Roboto-Regular, 400, normal);
+@include font('Roboto', Roboto-Light, 300, normal);
+
+$main-font: 'Roboto', sans-serif;
+$light: 300;
+$normal: 400;
+$semi-bold: 500;
+$bold: 700;

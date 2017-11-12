@@ -1,0 +1,36 @@
+.footer {
+  @include rem(padding, 40px 0);
+  background-color: color(footer-bg);
+  height: auto;
+  margin-top: 0;
+
+  li {
+    @include rem(padding, 10px 0);
+
+    a {
+      @include rem(font-size, 15px);
+      @include rem(margin-right, 60px);
+      color: color(main-purple);
+      font-weight: $semi-bold;
+      padding: 0;
+    }
+
+    &:last-child a {
+      margin-right: 0;
+    }
+  }
+
+  &__description {
+    @include rem(margin-bottom, 32px);
+    @include rem(margin-top, 25px);
+  }
+
+  &__copyright,
+  &__description {
+    p {
+      @include lh(21, 14);
+      @include rem(font-size, 14px);
+      font-weight: $normal;
+    }
+  }
+}

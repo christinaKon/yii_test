@@ -1,0 +1,1168 @@
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('./fonts/slick.eot');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: '←';
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '→';
+}
+
+.slick-next
+{
+    right: -25px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: '→';
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '←';
+}
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
+}
+
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,300,700");
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Black.eot");
+  src: url("../fonts/Roboto-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Black.woff") format("woff"), url("../fonts/Roboto-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.eot");
+  src: url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.eot");
+  src: url("../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Italic.eot");
+  src: url("../fonts/Roboto-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Italic.woff") format("woff"), url("../fonts/Roboto-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.eot");
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Light.eot");
+  src: url("../fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+/* line 1, /var/www/ddlmaster/frontend/web/design/sass/base/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
+/* line 1, /var/www/ddlmaster/frontend/web/design/sass/base/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 1, /var/www/ddlmaster/frontend/web/design/sass/base/_reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 1, /var/www/ddlmaster/frontend/web/design/sass/base/_reset.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 1, /var/www/ddlmaster/frontend/web/design/sass/base/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 1, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #191919;
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+  height: 100%; }
+
+/* line 8, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
+html body {
+  height: 100%; }
+
+/* line 12, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
+html * {
+  font-size: 14px;
+  font-size: 0.875rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 18, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 23, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
+img {
+  display: block;
+  height: auto;
+  max-width: 100%; }
+
+/* line 29, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
+a {
+  -webkit-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out; }
+
+/* line 32, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
+a:hover {
+  -webkit-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out; }
+
+/* line 37, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
+h2 {
+  line-height: 1.5;
+  font-size: 26px;
+  font-size: 1.625rem;
+  font-weight: 400; }
+
+/* line 43, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
+h3 {
+  line-height: 1.28571;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 500; }
+
+/* line 49, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
+h4 {
+  line-height: 1.55556;
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: #5321a8;
+  font-weight: 400; }
+
+/* line 56, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
+.button {
+  line-height: 1.25;
+  border-radius: 3px;
+  border-radius: 0.1875rem;
+  font-size: 16px;
+  font-size: 1rem;
+  padding: 9px 35px 11px 35px;
+  padding: 0.5625rem 2.1875rem 0.6875rem 2.1875rem;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500; }
+
+/* line 10, /var/www/ddlmaster/frontend/web/design/sass/mixins/_custom.sass */
+.button.green {
+  background-color: #16bc02;
+  color: rgba(255, 255, 255, 0.87); }
+
+/* line 14, /var/www/ddlmaster/frontend/web/design/sass/mixins/_custom.sass */
+.button.small {
+  line-height: 1.57143;
+  font-size: 14px;
+  font-size: 0.875rem;
+  padding: 4px 16px 6px 16px;
+  padding: 0.25rem 1rem 0.375rem 1rem; }
+
+/* line 19, /var/www/ddlmaster/frontend/web/design/sass/mixins/_custom.sass */
+.button.transparent {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.18);
+  color: #333333; }
+
+/* line 1, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
+input,
+button,
+input *,
+button * {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none; }
+
+/* line 8, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
+input:focus, input:hover, input:active,
+button:focus,
+button:hover,
+button:active,
+input *:focus,
+input *:hover,
+input *:active,
+button *:focus,
+button *:hover,
+button *:active {
+  outline: none; }
+
+/* line 28, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
+select:hover {
+  cursor: pointer; }
+
+/* line 35, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
+input[type='checkbox'] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  appearance: checkbox; }
+
+/* line 45, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
+input[type='radio'] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+  appearance: radio; }
+
+/* line 55, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
+.button.green {
+  line-height: 1.25;
+  border-radius: 3px;
+  border-radius: 0.1875rem;
+  font-size: 16px;
+  font-size: 1rem;
+  padding: 9px 35px 11px 35px;
+  padding: 0.5625rem 2.1875rem 0.6875rem 2.1875rem;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500; }
+
+/* line 10, /var/www/ddlmaster/frontend/web/design/sass/mixins/_custom.sass */
+.button.green.green {
+  background-color: #16bc02;
+  color: rgba(255, 255, 255, 0.87); }
+
+/* line 14, /var/www/ddlmaster/frontend/web/design/sass/mixins/_custom.sass */
+.button.green.small {
+  line-height: 1.57143;
+  font-size: 14px;
+  font-size: 0.875rem;
+  padding: 4px 16px 6px 16px;
+  padding: 0.25rem 1rem 0.375rem 1rem; }
+
+/* line 19, /var/www/ddlmaster/frontend/web/design/sass/mixins/_custom.sass */
+.button.green.transparent {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.18);
+  color: #333333; }
+
+/* line 1, /var/www/ddlmaster/frontend/web/design/sass/layout/_main-layout.scss */
+.flex-horisontal {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+/* line 1, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_begin-work.scss */
+.begin-work {
+  padding: 39px 0;
+  padding: 2.4375rem 0;
+  background-color: #fafafa;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.12); }
+
+/* line 6, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_begin-work.scss */
+.begin-work h2 {
+  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
+  text-align: center; }
+
+/* line 11, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_begin-work.scss */
+.begin-work__button {
+  text-align: center; }
+
+/* line 2, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_brands.scss */
+.brands .views-row {
+  margin-right: 110px;
+  margin-right: 6.875rem; }
+
+/* line 5, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_brands.scss */
+.brands .views-row img {
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 11, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_brands.scss */
+.brands .slick-track {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+/* line 1, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_clients-reviews.scss */
+.clients-reviews {
+  padding: 60px 0;
+  padding: 3.75rem 0; }
+
+/* line 25, /var/www/ddlmaster/frontend/web/design/sass/mixins/_custom.sass */
+.clients-reviews .slick-dots {
+  bottom: -37px;
+  bottom: -2.3125rem; }
+
+/* line 28, /var/www/ddlmaster/frontend/web/design/sass/mixins/_custom.sass */
+.clients-reviews .slick-dots li {
+  height: 8px;
+  height: 0.5rem;
+  width: 8px;
+  width: 0.5rem; }
+
+/* line 32, /var/www/ddlmaster/frontend/web/design/sass/mixins/_custom.sass */
+.clients-reviews .slick-dots button {
+  background: #bdbdbd;
+  border-radius: 50%;
+  height: 8px;
+  padding: 0;
+  width: 8px; }
+
+/* line 39, /var/www/ddlmaster/frontend/web/design/sass/mixins/_custom.sass */
+.clients-reviews .slick-dots button:before {
+  display: none; }
+
+/* line 42, /var/www/ddlmaster/frontend/web/design/sass/mixins/_custom.sass */
+.clients-reviews .slick-dots .slick-active button {
+  background: #16bc02; }
+
+/* line 5, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_clients-reviews.scss */
+.clients-reviews h2 {
+  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
+  text-align: center; }
+
+/* line 10, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_clients-reviews.scss */
+.clients-reviews h3 {
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  margin-top: 16px;
+  margin-top: 1rem;
+  text-align: center; }
+
+/* line 15, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_clients-reviews.scss */
+.clients-reviews h3 span {
+  line-height: 1.5;
+  font-size: 12px;
+  font-size: 0.75rem;
+  color: #23b400;
+  display: block;
+  font-weight: 400;
+  text-align: center; }
+
+/* line 25, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_clients-reviews.scss */
+.clients-reviews__description {
+  font-size: 12px;
+  font-size: 0.75rem;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  text-align: center; }
+
+/* line 32, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_clients-reviews.scss */
+.clients-reviews .views-wrapper-inner {
+  padding-bottom: 8px;
+  padding-bottom: 0.5rem;
+  padding-left: 36px;
+  padding-left: 2.25rem;
+  padding-right: 36px;
+  padding-right: 2.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+/* line 40, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_clients-reviews.scss */
+.clients-reviews .views-row {
+  border-radius: 3px;
+  border-radius: 0.1875rem;
+  width: 236px;
+  width: 14.75rem;
+  background: #fafafa;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.18);
+  overflow: hidden; }
+
+/* line 47, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_clients-reviews.scss */
+.clients-reviews .views-row:hover {
+  background: #fff;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.12); }
+
+/* line 53, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_clients-reviews.scss */
+.clients-reviews__title, .clients-reviews__description {
+  padding: 0 16px;
+  padding: 0 1rem; }
+
+/* line 2, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_find-out.scss */
+.find-out h2 {
+  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
+  text-align: center; }
+
+/* line 7, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_find-out.scss */
+.find-out h4 {
+  margin-bottom: 15px;
+  margin-bottom: 0.9375rem; }
+
+/* line 11, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_find-out.scss */
+.find-out__element {
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem; }
+
+/* line 14, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_find-out.scss */
+.find-out__element p {
+  line-height: 1.5;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 400; }
+
+/* line 21, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_find-out.scss */
+.find-out__column_left {
+  margin-right: 159px;
+  margin-right: 9.9375rem; }
+
+/* line 1, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
+.footer {
+  padding: 40px 0;
+  padding: 2.5rem 0;
+  background-color: #eeeeee;
+  height: auto;
+  margin-top: 0; }
+
+/* line 7, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
+.footer li {
+  padding: 10px 0;
+  padding: 0.625rem 0; }
+
+/* line 10, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
+.footer li a {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  margin-right: 60px;
+  margin-right: 3.75rem;
+  color: #5321a8;
+  font-weight: 500;
+  padding: 0; }
+
+/* line 18, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
+.footer li:last-child a {
+  margin-right: 0; }
+
+/* line 23, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
+.footer__description {
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
+  margin-top: 25px;
+  margin-top: 1.5625rem; }
+
+/* line 30, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
+.footer__copyright p, .footer__description p {
+  line-height: 1.5;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 400; }
+
+/* line 1, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_for-experts-front.scss */
+.for-experts {
+  margin-bottom: 61px;
+  margin-bottom: 3.8125rem;
+  margin-top: 96px;
+  margin-top: 6rem; }
+
+/* line 6, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_for-experts-front.scss */
+.for-experts__element-inner {
+  padding: 20px 40px 40px;
+  padding: 1.25rem 2.5rem 2.5rem;
+  background-color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+/* line 15, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_for-experts-front.scss */
+.for-experts__first {
+  margin-right: 21px;
+  margin-right: 1.3125rem;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.12); }
+
+/* line 19, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_for-experts-front.scss */
+.for-experts__first .icon {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 72px;
+  height: 68px; }
+
+/* line 24, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_for-experts-front.scss */
+.for-experts__last {
+  margin-left: 21px;
+  margin-left: 1.3125rem;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.18); }
+
+/* line 28, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_for-experts-front.scss */
+.for-experts__last .icon {
+  margin-top: 19px;
+  margin-top: 1.1875rem;
+  background-image: url(sprite.png);
+  background-position: -140px 0px;
+  width: 85px;
+  height: 32px;
+  display: block; }
+
+/* line 35, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_for-experts-front.scss */
+.for-experts__for {
+  line-height: 1.5;
+  font-size: 12px;
+  font-size: 0.75rem;
+  margin-bottom: 54px;
+  margin-bottom: 3.375rem;
+  margin-right: 20px;
+  margin-right: 1.25rem;
+  margin-top: 27px;
+  margin-top: 1.6875rem;
+  color: #1eb306;
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+/* line 47, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_for-experts-front.scss */
+.for-experts__description, .for-experts__link {
+  line-height: 1.5;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 400; }
+
+/* line 54, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_for-experts-front.scss */
+.for-experts__link {
+  width: 100%; }
+
+/* line 57, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_for-experts-front.scss */
+.for-experts__link a {
+  margin-top: 19px;
+  margin-top: 1.1875rem;
+  color: #5321a8;
+  display: block;
+  text-align: right; }
+
+/* line 1, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
+.header {
+  padding: 8px 0;
+  padding: 0.5rem 0;
+  background-color: #fafafa;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.12); }
+
+/* line 6, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
+.header li {
+  margin-right: 40px;
+  margin-right: 2.5rem; }
+
+/* line 9, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
+.header li:last-child {
+  margin-right: 0; }
+
+/* line 13, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
+.header li a {
+  line-height: 1.57143;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 500; }
+
+/* line 20, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
+.header a {
+  color: #333333;
+  font-weight: 500; }
+
+/* line 25, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
+.header .col-md-9.flex-horisontal {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+/* line 29, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
+.header .button {
+  margin-right: 16px;
+  margin-right: 1rem; }
+
+/* line 32, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
+.header .button.transparent {
+  margin-right: 32px;
+  margin-right: 2rem; }
+
+/* line 37, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
+.header .separator-vertical {
+  height: 44px;
+  height: 2.75rem;
+  margin-left: 8px;
+  margin-left: 0.5rem;
+  margin-right: 8px;
+  margin-right: 0.5rem;
+  width: 2px;
+  width: 0.125rem;
+  background-color: #e2e2e2;
+  display: inline-block; }
+
+/* line 1, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_help.scss */
+.help {
+  margin-bottom: 120px;
+  margin-bottom: 7.5rem;
+  margin-top: 30px;
+  margin-top: 1.875rem; }
+
+/* line 5, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_help.scss */
+.help__with {
+  line-height: 1.5;
+  font-size: 12px;
+  font-size: 0.75rem;
+  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
+  color: #1eb306;
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+/* line 15, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_help.scss */
+.help__description {
+  line-height: 1.5;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 400; }
+
+/* line 21, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_help.scss */
+.help__right {
+  padding-left: 28px;
+  padding-left: 1.75rem; }
+
+/* line 25, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_help.scss */
+.help__element {
+  padding: 22px;
+  padding: 1.375rem;
+  width: 432px;
+  width: 27rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fafafa;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+/* line 33, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_help.scss */
+.help__element i {
+  display: block;
+  float: left; }
+
+/* line 38, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_help.scss */
+.help__element_left {
+  margin-left: 17px;
+  margin-left: 1.0625rem;
+  margin-right: 40px;
+  margin-right: 2.5rem; }
+
+/* line 43, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_help.scss */
+.help__element_left i {
+  background-image: url(sprite.png);
+  background-position: -73px 0px;
+  width: 66px;
+  height: 66px; }
+
+/* line 47, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_help.scss */
+.help__element_right {
+  margin-left: 40px;
+  margin-left: 2.5rem; }
+
+/* line 51, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_help.scss */
+.help__element_right i {
+  background-image: url(sprite.png);
+  background-position: 0px -69px;
+  width: 58px;
+  height: 64px; }
+
+/* line 1, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_how-it-works.scss */
+.how-it-works {
+  padding: 60px 0;
+  padding: 3.75rem 0;
+  background: #fafafa;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.18); }
+
+/* line 25, /var/www/ddlmaster/frontend/web/design/sass/mixins/_custom.sass */
+.how-it-works .slick-dots {
+  bottom: -37px;
+  bottom: -2.3125rem; }
+
+/* line 28, /var/www/ddlmaster/frontend/web/design/sass/mixins/_custom.sass */
+.how-it-works .slick-dots li {
+  height: 8px;
+  height: 0.5rem;
+  width: 8px;
+  width: 0.5rem; }
+
+/* line 32, /var/www/ddlmaster/frontend/web/design/sass/mixins/_custom.sass */
+.how-it-works .slick-dots button {
+  background: #bdbdbd;
+  border-radius: 50%;
+  height: 8px;
+  padding: 0;
+  width: 8px; }
+
+/* line 39, /var/www/ddlmaster/frontend/web/design/sass/mixins/_custom.sass */
+.how-it-works .slick-dots button:before {
+  display: none; }
+
+/* line 42, /var/www/ddlmaster/frontend/web/design/sass/mixins/_custom.sass */
+.how-it-works .slick-dots .slick-active button {
+  background: #16bc02; }
+
+/* line 7, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_how-it-works.scss */
+.how-it-works h2 {
+  text-align: center; }
+
+/* line 11, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_how-it-works.scss */
+.how-it-works .views-row {
+  margin-top: 60px;
+  margin-top: 3.75rem;
+  padding-left: 36px;
+  padding-left: 2.25rem;
+  padding-right: 36px;
+  padding-right: 2.25rem; }
+
+/* line 16, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_how-it-works.scss */
+.how-it-works .views-row__inner {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+/* line 23, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_how-it-works.scss */
+.how-it-works__left, .how-it-works__right {
+  width: 297px;
+  width: 18.5625rem; }
+
+/* line 27, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_how-it-works.scss */
+.how-it-works__left-item, .how-it-works__right-item {
+  border-radius: 3px;
+  border-radius: 0.1875rem;
+  background: #fafafa;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.12); }
+
+/* line 33, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_how-it-works.scss */
+.how-it-works__left-first, .how-it-works__right-first {
+  margin-bottom: 72px;
+  margin-bottom: 4.5rem; }
+
+/* line 38, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_how-it-works.scss */
+.how-it-works__left-item {
+  padding: 22px 17px 22px;
+  padding: 1.375rem 1.0625rem 1.375rem; }
+
+/* line 41, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_how-it-works.scss */
+.how-it-works__left-item p {
+  padding-right: 41px;
+  padding-right: 2.5625rem;
+  background: url("../img/icons/arrow-right.png") no-repeat center right;
+  text-align: right; }
+
+/* line 48, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_how-it-works.scss */
+.how-it-works__right-item {
+  padding: 22px 22px 22px 17px;
+  padding: 1.375rem 1.375rem 1.375rem 1.0625rem; }
+
+/* line 51, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_how-it-works.scss */
+.how-it-works__right-item p {
+  padding-left: 41px;
+  padding-left: 2.5625rem;
+  background: url("../img/icons/arrow-left.png") no-repeat center left;
+  text-align: left; }
+
+/* line 60, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_how-it-works.scss */
+.how-it-works__left-item:hover p, .how-it-works__right-item:hover p {
+  color: #5321a8; }
+
+/* line 65, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_how-it-works.scss */
+.how-it-works p {
+  line-height: 1.27273;
+  font-size: 22px;
+  font-size: 1.375rem;
+  cursor: default;
+  font-weight: 400; }
+
+/* line 2, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_start-work-front.scss */
+.start-work__description p {
+  line-height: 1.55556;
+  font-size: 18px;
+  font-size: 1.125rem;
+  margin: 45px 0 40px 0;
+  margin: 2.8125rem 0 2.5rem 0;
+  font-weight: 500; }
+
+/* line 9, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_start-work-front.scss */
+.start-work h2 {
+  margin-bottom: 40px;
+  margin-bottom: 2.5rem; }
+
+/* line 1, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_statistic-front.scss */
+.statistic {
+  margin-bottom: 95px;
+  margin-bottom: 5.9375rem;
+  margin-top: 73px;
+  margin-top: 4.5625rem;
+  text-align: center; }
+
+/* line 6, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_statistic-front.scss */
+.statistic p {
+  line-height: 1.5;
+  font-size: 12px;
+  font-size: 0.75rem;
+  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
+  display: inline-block;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase; }
+
+/* line 16, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_statistic-front.scss */
+.statistic__count {
+  line-height: 1.25;
+  font-size: 48px;
+  font-size: 3rem;
+  color: #1eb306;
+  font-weight: 400; }
+
+/* line 23, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_statistic-front.scss */
+.statistic__cell {
+  max-width: 197px;
+  max-width: 12.3125rem;
+  margin-left: auto;
+  margin-right: auto; }

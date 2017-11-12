@@ -1,0 +1,45 @@
+.header {
+  @include rem(padding, 8px 0);
+  background-color: color(main-bg);
+  box-shadow: $main-shadow-big;
+
+  li {
+    @include rem(margin-right, 40px);
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      @include lh(22, 14);
+      @include rem(font-size, 14px);
+      font-weight: $semi-bold;
+    }
+  }
+
+  a {
+    color: color(header-menu);
+    font-weight: $semi-bold;
+  }
+
+  .col-md-9.flex-horisontal {
+    justify-content: space-between;
+  }
+
+  .button {
+    @include rem(margin-right, 16px);
+
+    &.transparent {
+      @include rem(margin-right, 32px);
+    }
+  }
+
+  .separator-vertical {
+    @include rem(height, 44px);
+    @include rem(margin-left, 8px);
+    @include rem(margin-right, 8px);
+    @include rem(width, 2px);
+    background-color: color(header-separator);
+    display: inline-block;
+  }
+}

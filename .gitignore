@@ -33,3 +33,7 @@ phpunit.phar
 
 # vagrant runtime
 /.vagrant
+
+# theme
+/frontend/web/design/node_modules
+/frontend/web/design/config.json

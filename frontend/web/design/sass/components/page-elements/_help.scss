@@ -1,0 +1,55 @@
+.help {
+  @include rem(margin-bottom, 120px);
+  @include rem(margin-top, 30px);
+
+  &__with {
+    @include lh(18, 12);
+    @include rem(font-size, 12px);
+    @include rem(margin-bottom, 15px);
+    color: color(main-green);
+    display: inline-block;
+    font-weight: $bold;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    @include lh(21, 14);
+    @include rem(font-size, 14px);
+    font-weight: $normal;
+  }
+
+  &__right {
+    @include rem(padding-left, 28px);
+  }
+
+  &__element {
+    @include rem(padding, 22px);
+    @include rem(width, 432px);
+    align-items: center;
+    background-color: color(main-bg);
+    box-shadow: $main-shadow-big;
+    display: flex;
+
+    i {
+      display: block;
+      float: left;
+    }
+
+    &_left {
+      @include rem(margin-left, 17px);
+      @include rem(margin-right, 40px);
+    }
+
+    &_left i {
+      @include sprite($help-1);
+    }
+
+    &_right {
+      @include rem(margin-left, 40px);
+    }
+
+    &_right i {
+      @include sprite($help-2);
+    }
+  }
+}

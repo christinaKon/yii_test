@@ -1,0 +1,15 @@
+.brands {
+  .views-row {
+    @include rem(margin-right, 110px);
+
+    img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .slick-track {
+    align-items: center;
+    display: flex;
+  }
+}
