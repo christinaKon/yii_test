@@ -1,0 +1,19 @@
+.begin-work-for {
+  @include rem(margin-bottom, 60px);
+
+  h2 {
+    @include rem(margin-bottom, 29px);
+    text-align: center;
+  }
+
+  &__description {
+    @include rem(margin-bottom, 37px);
+
+    p {
+      @include lh(28, 18);
+      @include rem(font-size, 18px);
+      font-weight: $normal;
+      text-align: center;
+    }
+  }
+}

@@ -46,7 +46,7 @@ $this->title = 'Yii2 test-task';
                 <div class="header__links flex-horisontal">
                     <a href="#" class="button small green">Начать работу</a>
                     <a href="#" class="button small transparent">Войти</a>
-                    <a href="#" class="language ru">RU</a>
+                    <a href="#" class="language ru active">RU</a>
                     <span class="separator-vertical"></span>
                     <a href="#" class="language ua">UA</a>
                 </div>

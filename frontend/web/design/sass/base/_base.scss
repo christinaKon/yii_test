@@ -26,13 +26,13 @@ img {
   max-width: 100%;
 }
 
-a {
-  transition: all .4s ease-in-out;
+// a {
+//   transition: all .4s ease-in-out;
 
-  &:hover {
-    transition: all .4s ease-in-out;
-  }
-}
+//   &:hover {
+//     transition: all .4s ease-in-out;
+//   }
+// }
 
 h2 {
   @include lh(39, 26);

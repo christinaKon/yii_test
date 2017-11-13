@@ -423,18 +423,6 @@ img {
   height: auto;
   max-width: 100%; }
 
-/* line 29, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
-a {
-  -webkit-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out; }
-
-/* line 32, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
-a:hover {
-  -webkit-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out; }
-
 /* line 37, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
 h2 {
   line-height: 1.5;
@@ -570,6 +558,30 @@ input[type='radio'] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+/* line 1, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_begin-work-for.scss */
+.begin-work-for {
+  margin-bottom: 60px;
+  margin-bottom: 3.75rem; }
+
+/* line 4, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_begin-work-for.scss */
+.begin-work-for h2 {
+  margin-bottom: 29px;
+  margin-bottom: 1.8125rem;
+  text-align: center; }
+
+/* line 9, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_begin-work-for.scss */
+.begin-work-for__description {
+  margin-bottom: 37px;
+  margin-bottom: 2.3125rem; }
+
+/* line 12, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_begin-work-for.scss */
+.begin-work-for__description p {
+  line-height: 1.55556;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-align: center; }
 
 /* line 1, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_begin-work.scss */
 .begin-work {
@@ -869,8 +881,8 @@ input[type='radio'] {
 
 /* line 1, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
 .header {
-  padding: 8px 0;
-  padding: 0.5rem 0;
+  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
   background-color: #fafafa;
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.12); }
@@ -889,30 +901,61 @@ input[type='radio'] {
   line-height: 1.57143;
   font-size: 14px;
   font-size: 0.875rem;
-  font-weight: 500; }
+  padding: 19px 0;
+  padding: 1.1875rem 0;
+  display: inline-block;
+  font-weight: 500;
+  position: relative; }
 
-/* line 20, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
+/* line 22, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
+.header li a:after {
+  height: 3px;
+  height: 0.1875rem;
+  background-color: #16bc02;
+  bottom: 0;
+  content: '';
+  display: none;
+  left: 0;
+  position: absolute;
+  width: 100%; }
+
+/* line 33, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
+.header li a:hover,
+.header li a.active {
+  color: #1eb306;
+  text-decoration: none; }
+
+/* line 39, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
+.header li a:hover:after,
+.header li a.active:after {
+  display: block; }
+
+/* line 45, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
 .header a {
   color: #333333;
   font-weight: 500; }
 
-/* line 25, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
+/* line 50, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
+.header .language.active {
+  color: #1eb306; }
+
+/* line 54, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
 .header .col-md-9.flex-horisontal {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-/* line 29, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
+/* line 58, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
 .header .button {
   margin-right: 16px;
   margin-right: 1rem; }
 
-/* line 32, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
+/* line 61, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
 .header .button.transparent {
   margin-right: 32px;
   margin-right: 2rem; }
 
-/* line 37, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
+/* line 66, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
 .header .separator-vertical {
   height: 44px;
   height: 2.75rem;
@@ -1166,3 +1209,75 @@ input[type='radio'] {
   max-width: 12.3125rem;
   margin-left: auto;
   margin-right: auto; }
+
+/* line 2, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_what-does-deadline-give.scss */
+.what-does-deadline-give h2 {
+  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
+  text-align: center; }
+
+/* line 7, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_what-does-deadline-give.scss */
+.what-does-deadline-give__wrapper {
+  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
+  padding: 0 22px;
+  padding: 0 1.375rem; }
+
+/* line 12, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_what-does-deadline-give.scss */
+.what-does-deadline-give .views-row {
+  border-radius: 3px;
+  border-radius: 0.1875rem;
+  margin: 0 38px;
+  margin: 0 2.375rem;
+  padding: 52px 25px 40px 25px;
+  padding: 3.25rem 1.5625rem 2.5rem 1.5625rem;
+  background-color: #fafafa;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+/* line 23, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_what-does-deadline-give.scss */
+.what-does-deadline-give__image {
+  height: 80px;
+  height: 5rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+/* line 29, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_what-does-deadline-give.scss */
+.what-does-deadline-give__title {
+  height: 40px;
+  height: 2.5rem;
+  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
+  margin-top: 50px;
+  margin-top: 3.125rem;
+  text-align: center;
+  width: 100%; }
+
+/* line 36, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_what-does-deadline-give.scss */
+.what-does-deadline-give__title span {
+  line-height: 1.5;
+  font-size: 12px;
+  font-size: 0.75rem;
+  color: #1eb306;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+/* line 45, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_what-does-deadline-give.scss */
+.what-does-deadline-give__desctiption p {
+  line-height: 1.5;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-align: center; }

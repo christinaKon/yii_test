@@ -26,24 +26,25 @@ $chroma: add-colors((
 $chroma: define-color-scheme('functional', 'Colors used by functional parts of the design.');
 $chroma: add-colors('functional', (
   // Colors used in the main content area.
-  text:           'black',
+  text:               'black',
 
-  btn-green-bg:     'green',
-  btn-green-text:   'white1',
+  btn-green-bg:       'green',
+  btn-green-text:     'white1',
 
-  bg-white:         'white',
-  footer-bg:        'greyy2',
-  green-dots:       'green',
-  green-company:    'green2',
-  greyy-dots:       'greyy1',
-  header-menu:      'greyy3',
-  header-separator: 'greyy4',
+  bg-white:           'white',
+  footer-bg:          'greyy2',
+  green-dots:         'green',
+  green-company:      'green2',
+  greyy-dots:         'greyy1',
+  header-link-border: 'green',
+  header-menu:        'greyy3',
+  header-separator:   'greyy4',
 
-  main-bg:          'greyy',
-  main-black:       'black1',
-  main-green:       'green1',
-  main-purple:      'purple',
-  main-shadow:      'black',
+  main-bg:            'greyy',
+  main-black:         'black1',
+  main-green:         'green1',
+  main-purple:        'purple',
+  main-shadow:        'black',
 ));
 
 $chroma-active-scheme: 'functional';

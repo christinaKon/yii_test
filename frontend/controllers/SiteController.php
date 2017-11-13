@@ -144,6 +144,26 @@ class SiteController extends Controller
     }
 
     /**
+     * Displays to journalists page.
+     *
+     * @return mixed
+     */
+    public function actionToJournalists()
+    {
+        return $this->render('toJournalists');
+    }
+
+    /**
+     * Displays to Experts page.
+     *
+     * @return mixed
+     */
+    public function actionToExperts()
+    {
+        return $this->render('toExperts');
+    }
+
+    /**
      * Signs user up.
      *
      * @return mixed

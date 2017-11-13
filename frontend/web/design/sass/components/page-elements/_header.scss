@@ -1,5 +1,5 @@
 .header {
-  @include rem(padding, 8px 0);
+  @include rem(margin-bottom, 60px);
   background-color: color(main-bg);
   box-shadow: $main-shadow-big;
 
@@ -13,13 +13,42 @@
     a {
       @include lh(22, 14);
       @include rem(font-size, 14px);
+      @include rem(padding, 19px 0);
+      display: inline-block;
       font-weight: $semi-bold;
+      position: relative;
+    }
+
+    a:after {
+      @include rem(height, 3px);
+      background-color: color(header-link-border);
+      bottom: 0;
+      content: '';
+      display: none;
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
+
+    a:hover,
+    a.active {
+      color: color(main-green);
+      text-decoration: none;
+    }
+
+    a:hover:after,
+    a.active:after {
+      display: block;
     }
   }
 
   a {
     color: color(header-menu);
     font-weight: $semi-bold;
+  }
+
+  .language.active {
+    color: color(main-green);
   }
 
   .col-md-9.flex-horisontal {
