@@ -22,6 +22,7 @@ $this->title = 'Yii2 test-task';
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <?= $this->registerCssFile('/frontend/web/design/dist/main.css',['depends'=>AppAsset::className()]) ?>
     <?= $this->registerJsFile('/frontend/web/design/dist/main.js',['depends'=>AppAsset::className()]) ?>
 </head>
@@ -37,11 +38,11 @@ $this->title = 'Yii2 test-task';
                 </div>
             </div>
             <div class="col-md-9 flex-horisontal">
-                <ul class="header__menu flex-horisontal">
-                    <li><a href="#">Экспертам</a></li>
-                    <li><a href="#">Журналистам</a></li>
-                    <li><a href="#">Тарифы</a></li>
-                    <li><a href="#">Помощь</a></li>
+                <ul class="header__menu main-menu flex-horisontal">
+                    <li class="header__menu_item"><a href="#">Экспертам</a></li>
+                    <li class="header__menu_item"><a href="#">Журналистам</a></li>
+                    <li class="header__menu_item"><a href="#">Тарифы</a></li>
+                    <li class="header__menu_item"><a href="#">Помощь</a></li>
                 </ul>
                 <div class="header__links flex-horisontal">
                     <a href="#" class="button small green">Начать работу</a>

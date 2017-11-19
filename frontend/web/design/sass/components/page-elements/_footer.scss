@@ -10,7 +10,6 @@
     a {
       @include rem(font-size, 15px);
       @include rem(margin-right, 60px);
-      color: color(main-purple);
       font-weight: $semi-bold;
       padding: 0;
     }

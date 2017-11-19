@@ -1,0 +1,28 @@
+.primary-tabs {
+  @include rem(margin-bottom, 45px);
+  border-bottom: 1px solid color(primary-tab-bd);
+  text-align: center;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    a {
+      @include rem(font-size, 14px);
+      @include rem(letter-spacing, .54px);
+      @include rem(margin-left, 20px);
+      @include rem(margin-right, 20px);
+      @include rem(padding-bottom, 20px);
+      color: color(primary-tab-item);
+      display: block;
+      font-weight: $semi-bold;
+    }
+
+    &.active a {
+      @include rem(padding-bottom, 17px);
+      border-bottom: 3px solid color(active-item-bd);
+    }
+  }
+}

@@ -12,11 +12,14 @@ $chroma: add-colors((
   green:         #16bc02,
   green1:        #1eb306,
   green2:        #23b400,
+  green3:        #12881b,
   greyy:         #fafafa,
   greyy1:        #bdbdbd,
-  greyy2:        #eeeeee,
-  greyy3:        #333333,
+  greyy2:        #eee,
+  greyy3:        #333,
   greyy4:        #e2e2e2,
+  greyy5:        #afafaf,
+  greyy6:        #626262,
   purple:        #5321a8,
   white:         #fff,
   white1:        rgba(255, 255, 255, 0.87),
@@ -33,9 +36,13 @@ $chroma: add-colors('functional', (
 
   bg-white:           'white',
   footer-bg:          'greyy2',
+
+  active-item-bd:     'green',
+
   green-dots:         'green',
   green-company:      'green2',
   greyy-dots:         'greyy1',
+
   header-link-border: 'green',
   header-menu:        'greyy3',
   header-separator:   'greyy4',
@@ -45,6 +52,15 @@ $chroma: add-colors('functional', (
   main-green:         'green1',
   main-purple:        'purple',
   main-shadow:        'black',
+
+  sidebar:            'green3',
+  sidebar-item:       'greyy6',
+
+  bell:               'greyy5',
+  new-message:        'white',
+
+  primary-tab-bd:     'greyy2',
+  primary-tab-item:   'greyy3'
 ));
 
 $chroma-active-scheme: 'functional';

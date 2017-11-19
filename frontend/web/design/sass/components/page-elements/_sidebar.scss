@@ -1,0 +1,58 @@
+.sidebar {
+  @include rem(margin-top, 16px);
+  @include rem(padding-bottom, 15px);
+  @include rem(padding-top, 15px);
+  background-color: color(main-bg);
+  border-radius: 2px;
+  box-shadow: $main-shadow-small;
+
+  li {
+    padding: 1px 0;
+  }
+
+  li a {
+    @include rem(letter-spacing, .54px);
+    @include rem(margin-bottom, 12px);
+    @include rem(padding-left, 25px);
+    @include rem(margin-top, 12px);
+    align-items: center;
+    border-right: 4px solid transparent;
+    color: color(sidebar-item);
+    display: flex;
+    font-weight: $semi-bold;
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+      border-right-color: color(active-item-bd);
+    }
+
+    &:hover,
+    &:active,
+    &:hover i,
+    &:active i {
+      color: color(sidebar);
+    }
+
+    i {
+      @include rem(font-size, 16px);
+      @include rem(margin-right, 25px);
+      color: color(sidebar-item);
+      width: 14px;
+    }
+  }
+
+  .divider-horizontal {
+    @include rem(margin, 32px 20px 20px);
+    background-color: color(primary-tab-bd);
+    height: 2px;
+  }
+
+  .subscribes {
+    @include rem(letter-spacing, .54px);
+    @include rem(padding, 0 20px 28px);
+    color: color(sidebar-item);
+    display: block;
+    font-weight: $semi-bold;
+  }
+}

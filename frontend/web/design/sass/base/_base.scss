@@ -12,6 +12,12 @@ html {
   * {
     @include rem(font-size, 14px);
     box-sizing: border-box;
+    color: color(main-black);
+  }
+
+  sub,
+  sup {
+    font-size: 75%;
   }
 }
 
@@ -26,13 +32,22 @@ img {
   max-width: 100%;
 }
 
-// a {
-//   transition: all .4s ease-in-out;
+a {
+  color: color(main-purple);
+  transition: all .4s ease-in-out;
 
-//   &:hover {
-//     transition: all .4s ease-in-out;
-//   }
-// }
+  &:hover {
+    transition: all .4s ease-in-out;
+  }
+}
+
+.h1 {
+  @include rem(font-size, 32px);
+  @include rem(margin-bottom, 65px);
+  color: color(main-black);
+  font-weight: $normal;
+  text-align: center;
+}
 
 h2 {
   @include lh(39, 26);
@@ -51,8 +66,4 @@ h4 {
   @include rem(font-size, 18px);
   color: color(main-purple);
   font-weight: $normal;
-}
-
-.button {
-  @include btn;
 }

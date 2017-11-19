@@ -1,0 +1,22 @@
+.questions-answers {
+  @include rem(margin-bottom, 70px);
+  padding-bottom: 1px;
+
+  &__item {
+    @include rem(margin-bottom, 45px);
+  }
+
+  &__title {
+    @include rem(margin-bottom, 15px);
+
+    h2 {
+      @include rem(font-size, 22px);
+      color: color(main-black);
+    }
+  }
+
+  p {
+    @include lh(21, 14);
+    @include rem(letter-spacing, .54px);
+  }
+}

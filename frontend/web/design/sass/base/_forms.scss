@@ -52,6 +52,22 @@ input[type='radio'] {
   // }
 }
 
-.button.green {
+.button {
   @include btn;
+}
+
+.create-button {
+  background-color: color(main-bg);
+  border-radius: 3px;
+  box-shadow: $main-shadow-small;
+
+  a {
+    @include rem(padding-bottom, 15px);
+    @include rem(padding-top, 17px);
+    color: color(sidebar);
+    display: block;
+    font-weight: $semi-bold;
+    text-align: center;
+    text-decoration: none;
+  }
 }

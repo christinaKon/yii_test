@@ -409,74 +409,70 @@ html * {
   font-size: 14px;
   font-size: 0.875rem;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #191919; }
 
 /* line 18, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
+html sub,
+html sup {
+  font-size: 75%; }
+
+/* line 24, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 23, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
+/* line 29, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
 img {
   display: block;
   height: auto;
   max-width: 100%; }
 
-/* line 37, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
+/* line 35, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
+a {
+  color: #5321a8;
+  -webkit-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out; }
+
+/* line 39, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
+a:hover {
+  -webkit-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out; }
+
+/* line 44, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
+.h1 {
+  font-size: 32px;
+  font-size: 2rem;
+  margin-bottom: 65px;
+  margin-bottom: 4.0625rem;
+  color: #191919;
+  font-weight: 400;
+  text-align: center; }
+
+/* line 52, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
 h2 {
   line-height: 1.5;
   font-size: 26px;
   font-size: 1.625rem;
   font-weight: 400; }
 
-/* line 43, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
+/* line 58, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
 h3 {
   line-height: 1.28571;
   font-size: 14px;
   font-size: 0.875rem;
   font-weight: 500; }
 
-/* line 49, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
+/* line 64, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
 h4 {
   line-height: 1.55556;
   font-size: 18px;
   font-size: 1.125rem;
   color: #5321a8;
   font-weight: 400; }
-
-/* line 56, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
-.button {
-  line-height: 1.25;
-  border-radius: 3px;
-  border-radius: 0.1875rem;
-  font-size: 16px;
-  font-size: 1rem;
-  padding: 9px 35px 11px 35px;
-  padding: 0.5625rem 2.1875rem 0.6875rem 2.1875rem;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 500; }
-
-/* line 10, /var/www/ddlmaster/frontend/web/design/sass/mixins/_custom.sass */
-.button.green {
-  background-color: #16bc02;
-  color: rgba(255, 255, 255, 0.87); }
-
-/* line 14, /var/www/ddlmaster/frontend/web/design/sass/mixins/_custom.sass */
-.button.small {
-  line-height: 1.57143;
-  font-size: 14px;
-  font-size: 0.875rem;
-  padding: 4px 16px 6px 16px;
-  padding: 0.25rem 1rem 0.375rem 1rem; }
-
-/* line 19, /var/www/ddlmaster/frontend/web/design/sass/mixins/_custom.sass */
-.button.transparent {
-  background-color: #fff;
-  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.18);
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.18);
-  color: #333333; }
 
 /* line 1, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
 input,
@@ -518,7 +514,7 @@ input[type='radio'] {
   appearance: radio; }
 
 /* line 55, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
-.button.green {
+.button {
   line-height: 1.25;
   border-radius: 3px;
   border-radius: 0.1875rem;
@@ -531,12 +527,12 @@ input[type='radio'] {
   font-weight: 500; }
 
 /* line 10, /var/www/ddlmaster/frontend/web/design/sass/mixins/_custom.sass */
-.button.green.green {
+.button.green {
   background-color: #16bc02;
   color: rgba(255, 255, 255, 0.87); }
 
 /* line 14, /var/www/ddlmaster/frontend/web/design/sass/mixins/_custom.sass */
-.button.green.small {
+.button.small {
   line-height: 1.57143;
   font-size: 14px;
   font-size: 0.875rem;
@@ -544,11 +540,30 @@ input[type='radio'] {
   padding: 0.25rem 1rem 0.375rem 1rem; }
 
 /* line 19, /var/www/ddlmaster/frontend/web/design/sass/mixins/_custom.sass */
-.button.green.transparent {
+.button.transparent {
   background-color: #fff;
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.18);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.18);
-  color: #333333; }
+  color: #333; }
+
+/* line 59, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
+.create-button {
+  background-color: #fafafa;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.18); }
+
+/* line 64, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
+.create-button a {
+  padding-bottom: 15px;
+  padding-bottom: 0.9375rem;
+  padding-top: 17px;
+  padding-top: 1.0625rem;
+  color: #12881b;
+  display: block;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none; }
 
 /* line 1, /var/www/ddlmaster/frontend/web/design/sass/layout/_main-layout.scss */
 .flex-horisontal {
@@ -755,7 +770,7 @@ input[type='radio'] {
 .footer {
   padding: 40px 0;
   padding: 2.5rem 0;
-  background-color: #eeeeee;
+  background-color: #eee;
   height: auto;
   margin-top: 0; }
 
@@ -770,22 +785,21 @@ input[type='radio'] {
   font-size: 0.9375rem;
   margin-right: 60px;
   margin-right: 3.75rem;
-  color: #5321a8;
   font-weight: 500;
   padding: 0; }
 
-/* line 18, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
+/* line 17, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
 .footer li:last-child a {
   margin-right: 0; }
 
-/* line 23, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
+/* line 22, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
 .footer__description {
   margin-bottom: 32px;
   margin-bottom: 2rem;
   margin-top: 25px;
   margin-top: 1.5625rem; }
 
-/* line 30, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
+/* line 29, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
 .footer__copyright p, .footer__description p {
   line-height: 1.5;
   font-size: 14px;
@@ -875,9 +889,63 @@ input[type='radio'] {
 .for-experts__link a {
   margin-top: 19px;
   margin-top: 1.1875rem;
-  color: #5321a8;
   display: block;
   text-align: right; }
+
+/* line 2, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header-closed.scss */
+.header-closed i {
+  font-size: 16px;
+  font-size: 1rem; }
+
+/* line 6, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header-closed.scss */
+.header-closed__menu_item {
+  width: 140px;
+  width: 8.75rem;
+  text-align: center; }
+
+/* line 11, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header-closed.scss */
+.header-closed__new_message {
+  font-size: 8px;
+  font-size: 0.5rem;
+  height: 16px;
+  height: 1rem;
+  letter-spacing: 0.31px;
+  letter-spacing: 0.01937rem;
+  margin-left: 7px;
+  margin-left: 0.4375rem;
+  padding-top: 2px;
+  padding-top: 0.125rem;
+  width: 16px;
+  width: 1rem;
+  background-color: #1eb306;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle; }
+
+/* line 27, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header-closed.scss */
+.header-closed__user {
+  height: 32px;
+  height: 2rem;
+  margin-left: 15px;
+  margin-left: 0.9375rem;
+  margin-right: 8px;
+  margin-right: 0.5rem;
+  width: 32px;
+  width: 2rem;
+  border-radius: 50%;
+  overflow: hidden; }
+
+/* line 36, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header-closed.scss */
+.header-closed__bell i {
+  color: #afafaf; }
+
+/* line 40, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header-closed.scss */
+.header-closed__logo img {
+  margin-left: auto;
+  margin-right: auto; }
 
 /* line 1, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
 .header {
@@ -888,74 +956,59 @@ input[type='radio'] {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.12); }
 
 /* line 6, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
-.header li {
+.header__menu_item {
   margin-right: 40px;
   margin-right: 2.5rem; }
 
 /* line 9, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
-.header li:last-child {
+.header__menu_item:last-child {
   margin-right: 0; }
 
-/* line 13, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
-.header li a {
+/* line 14, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
+.header a {
+  color: #333;
+  font-weight: 500; }
+
+/* line 19, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
+.header .main-menu a {
   line-height: 1.57143;
   font-size: 14px;
   font-size: 0.875rem;
-  padding: 19px 0;
-  padding: 1.1875rem 0;
-  display: inline-block;
+  letter-spacing: 0.54px;
+  letter-spacing: 0.03375rem;
+  padding: 19px 0 16px;
+  padding: 1.1875rem 0 1rem;
+  border-bottom: 3px solid transparent;
+  display: block;
   font-weight: 500;
-  position: relative; }
-
-/* line 22, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
-.header li a:after {
-  height: 3px;
-  height: 0.1875rem;
-  background-color: #16bc02;
-  bottom: 0;
-  content: '';
-  display: none;
-  left: 0;
-  position: absolute;
-  width: 100%; }
-
-/* line 33, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
-.header li a:hover,
-.header li a.active {
-  color: #1eb306;
   text-decoration: none; }
 
-/* line 39, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
-.header li a:hover:after,
-.header li a.active:after {
-  display: block; }
+/* line 29, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
+.header .main-menu a:hover, .header .main-menu a.active {
+  border-bottom-color: #16bc02;
+  color: #1eb306; }
 
-/* line 45, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
-.header a {
-  color: #333333;
-  font-weight: 500; }
-
-/* line 50, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
+/* line 36, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
 .header .language.active {
   color: #1eb306; }
 
-/* line 54, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
-.header .col-md-9.flex-horisontal {
+/* line 40, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
+.header .flex-horisontal {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-/* line 58, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
+/* line 44, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
 .header .button {
   margin-right: 16px;
   margin-right: 1rem; }
 
-/* line 61, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
+/* line 47, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
 .header .button.transparent {
   margin-right: 32px;
   margin-right: 2rem; }
 
-/* line 66, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
+/* line 52, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_header.scss */
 .header .separator-vertical {
   height: 44px;
   height: 2.75rem;
@@ -1160,6 +1213,158 @@ input[type='radio'] {
   font-size: 1.375rem;
   cursor: default;
   font-weight: 400; }
+
+/* line 1, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_primary-tabs.scss */
+.primary-tabs {
+  margin-bottom: 45px;
+  margin-bottom: 2.8125rem;
+  border-bottom: 1px solid #eee;
+  text-align: center; }
+
+/* line 6, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_primary-tabs.scss */
+.primary-tabs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+/* line 12, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_primary-tabs.scss */
+.primary-tabs__item a {
+  font-size: 14px;
+  font-size: 0.875rem;
+  letter-spacing: 0.54px;
+  letter-spacing: 0.03375rem;
+  margin-left: 20px;
+  margin-left: 1.25rem;
+  margin-right: 20px;
+  margin-right: 1.25rem;
+  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
+  color: #333;
+  display: block;
+  font-weight: 500; }
+
+/* line 23, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_primary-tabs.scss */
+.primary-tabs__item.active a {
+  padding-bottom: 17px;
+  padding-bottom: 1.0625rem;
+  border-bottom: 3px solid #16bc02; }
+
+/* line 1, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_questions-answers.scss */
+.questions-answers {
+  margin-bottom: 70px;
+  margin-bottom: 4.375rem;
+  padding-bottom: 1px; }
+
+/* line 5, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_questions-answers.scss */
+.questions-answers__item {
+  margin-bottom: 45px;
+  margin-bottom: 2.8125rem; }
+
+/* line 9, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_questions-answers.scss */
+.questions-answers__title {
+  margin-bottom: 15px;
+  margin-bottom: 0.9375rem; }
+
+/* line 12, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_questions-answers.scss */
+.questions-answers__title h2 {
+  font-size: 22px;
+  font-size: 1.375rem;
+  color: #191919; }
+
+/* line 18, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_questions-answers.scss */
+.questions-answers p {
+  line-height: 1.5;
+  letter-spacing: 0.54px;
+  letter-spacing: 0.03375rem; }
+
+/* line 2, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_questions-bar.scss */
+.questions-bar__item {
+  margin-bottom: 22px;
+  margin-bottom: 1.375rem; }
+
+/* line 5, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_questions-bar.scss */
+.questions-bar__item a {
+  font-size: 14px;
+  font-size: 0.875rem;
+  letter-spacing: 0.54px;
+  letter-spacing: 0.03375rem; }
+
+/* line 1, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_sidebar.scss */
+.sidebar {
+  margin-top: 16px;
+  margin-top: 1rem;
+  padding-bottom: 15px;
+  padding-bottom: 0.9375rem;
+  padding-top: 15px;
+  padding-top: 0.9375rem;
+  background-color: #fafafa;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.18); }
+
+/* line 9, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_sidebar.scss */
+.sidebar li {
+  padding: 1px 0; }
+
+/* line 13, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_sidebar.scss */
+.sidebar li a {
+  letter-spacing: 0.54px;
+  letter-spacing: 0.03375rem;
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
+  padding-left: 25px;
+  padding-left: 1.5625rem;
+  margin-top: 12px;
+  margin-top: 0.75rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-right: 4px solid transparent;
+  color: #626262;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 500;
+  text-decoration: none; }
+
+/* line 25, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_sidebar.scss */
+.sidebar li a:hover, .sidebar li a:active {
+  border-right-color: #16bc02; }
+
+/* line 30, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_sidebar.scss */
+.sidebar li a:hover, .sidebar li a:active,
+.sidebar li a:hover i,
+.sidebar li a:active i {
+  color: #12881b; }
+
+/* line 37, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_sidebar.scss */
+.sidebar li a i {
+  font-size: 16px;
+  font-size: 1rem;
+  margin-right: 25px;
+  margin-right: 1.5625rem;
+  color: #626262;
+  width: 14px; }
+
+/* line 45, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_sidebar.scss */
+.sidebar .divider-horizontal {
+  margin: 32px 20px 20px;
+  margin: 2rem 1.25rem 1.25rem;
+  background-color: #eee;
+  height: 2px; }
+
+/* line 51, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_sidebar.scss */
+.sidebar .subscribes {
+  letter-spacing: 0.54px;
+  letter-spacing: 0.03375rem;
+  padding: 0 20px 28px;
+  padding: 0 1.25rem 1.75rem;
+  color: #626262;
+  display: block;
+  font-weight: 500; }
 
 /* line 2, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_start-work-front.scss */
 .start-work__description p {
