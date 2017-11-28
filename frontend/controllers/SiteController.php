@@ -309,6 +309,6 @@ class SiteController extends Controller
      */
     public function actionMarkedReleases()
     {
-        return $this->render('MarkedReleases');
+        return $this->render('markedReleases');
     }
 }
