@@ -18,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
           <aside class="sidebar">
             <ul class="all-releases sidebar__list">
               <li class="sidebar__item active"><a class="active" href="/site/press-releases"><i class="material-icons">import_contacts</i>Все релизы</a></li>
-              <li class="sidebar__item active"><a href="/site/marked-releases"><i class="material-icons">star</i>Отмеченные</a></li>
+              <li class="sidebar__item active"><a href="#"><i class="material-icons">star</i>Отмеченные</a></li>
             </ul>
           </aside>
 

@@ -301,14 +301,4 @@ class SiteController extends Controller
     {
         return $this->render('myAnswers');
     }
-
-    /**
-     * Displays to marked releases page.
-     *
-     * @return mixed
-     */
-    public function actionMarkedReleases()
-    {
-        return $this->render('markedReleases');
-    }
 }
