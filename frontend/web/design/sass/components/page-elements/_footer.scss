@@ -33,9 +33,7 @@
       font-weight: $normal;
     }
   }
-}
 
-.footer-closed {
   p {
     @include lh(21, 12);
     @include rem(font-size, 12px);

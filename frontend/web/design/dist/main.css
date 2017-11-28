@@ -1340,53 +1340,53 @@ input[type='radio'] {
   font-size: 0.875rem;
   font-weight: 400; }
 
-/* line 39, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
-.footer-closed p {
+/* line 37, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
+.footer p {
   line-height: 1.75;
   font-size: 12px;
   font-size: 0.75rem;
   font-weight: 400;
   letter-spacing: .47px; }
 
-/* line 46, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
-.footer-closed span {
+/* line 44, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
+.footer span {
   line-height: 1.55556;
   font-size: 18px;
   font-size: 1.125rem;
   color: #1eb306;
   font-weight: 400; }
 
-/* line 53, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
-.footer-closed__contacts {
+/* line 51, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
+.footer__contacts {
   margin-top: 15px;
   margin-top: 0.9375rem; }
 
-/* line 57, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
-.footer-closed .group-full-width {
+/* line 55, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
+.footer .group-full-width {
   margin-bottom: 10px;
   margin-bottom: 0.625rem; }
 
-/* line 61, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
-.footer-closed__phone {
+/* line 59, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
+.footer__phone {
   margin-bottom: 13px;
   margin-bottom: 0.8125rem; }
 
-/* line 65, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
-.footer-closed a[href*='instagram.com'],
-.footer-closed a[href*='insta.com'] {
+/* line 63, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
+.footer a[href*='instagram.com'],
+.footer a[href*='insta.com'] {
   background-image: url(sprite.png);
   background-position: -140px -33px;
   width: 32px;
   height: 28px;
   display: inline-block; }
 
-/* line 71, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
-.footer-closed__copyright div {
+/* line 69, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
+.footer__copyright div {
   color: #626262;
   letter-spacing: .54px; }
 
-/* line 76, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
-.footer-closed .group-two-column {
+/* line 74, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
+.footer .group-two-column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1394,8 +1394,8 @@ input[type='radio'] {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-/* line 81, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
-.footer-closed .right {
+/* line 79, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_footer.scss */
+.footer .right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
