@@ -2341,7 +2341,7 @@ input[type='radio'] {
 .sidebar .divider-horizontal {
   margin: 15px 20px 20px;
   margin: 0.9375rem 1.25rem 1.25rem;
-  background-color: #1eb306;
+  background-color: #eee;
   height: 2px; }
 
 /* line 50, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_sidebar.scss */

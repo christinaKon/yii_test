@@ -43,7 +43,7 @@
 
   .divider-horizontal {
     @include rem(margin, 15px 20px 20px);
-    background-color: color(main-green);
+    background-color: color(primary-tab-bd);
     height: 2px;
   }
 
