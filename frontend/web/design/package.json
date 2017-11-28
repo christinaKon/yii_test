@@ -3,7 +3,9 @@
   "description": "New theme.",
   "version": "1.0.0",
   "author": "Kristina",
-  "dependencies": {},
+  "dependencies": {
+    "select2": "^4.0.6-rc.0"
+  },
   "config": {
     "unsafe-perm": true
   },

@@ -144,6 +144,16 @@ class SiteController extends Controller
     }
 
     /**
+     * Displays my requests page.
+     *
+     * @return mixed
+     */
+    public function actionMyRequests()
+    {
+        return $this->render('myRequests');
+    }
+
+    /**
      * Displays to journalists page.
      *
      * @return mixed
@@ -161,6 +171,46 @@ class SiteController extends Controller
     public function actionToExperts()
     {
         return $this->render('toExperts');
+    }
+
+    /**
+     * Displays to expert requests page.
+     *
+     * @return mixed
+     */
+    public function actionExpertRequests()
+    {
+        return $this->render('expertRequests');
+    }
+
+     /**
+     * Displays to journalist requests page.
+     *
+     * @return mixed
+     */
+    public function actionJournalistRequests()
+    {
+        return $this->render('journalistRequests');
+    }
+
+    /**
+     * Displays to press releases page.
+     *
+     * @return mixed
+     */
+    public function actionPressReleases()
+    {
+        return $this->render('pressReleases');
+    }
+
+    /**
+     * Displays to questions and answers page.
+     *
+     * @return mixed
+     */
+    public function actionQuestionsAnswers()
+    {
+        return $this->render('questionsAnswers');
     }
 
     /**
@@ -240,5 +290,25 @@ class SiteController extends Controller
             'news' => $news,
             'pages' => $pages
         ]);
+    }
+
+    /**
+     * Displays my answers page.
+     *
+     * @return mixed
+     */
+    public function actionMyAnswers()
+    {
+        return $this->render('myAnswers');
+    }
+
+    /**
+     * Displays to marked releases page.
+     *
+     * @return mixed
+     */
+    public function actionMarkedReleases()
+    {
+        return $this->render('MarkedReleases');
     }
 }

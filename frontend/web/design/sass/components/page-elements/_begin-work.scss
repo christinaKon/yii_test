@@ -4,6 +4,7 @@
   box-shadow: $main-shadow-big;
 
   h2 {
+    @include rem(font-size, 32px);
     @include rem(margin-bottom, 40px);
     text-align: center;
   }

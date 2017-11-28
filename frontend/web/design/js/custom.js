@@ -36,5 +36,15 @@ $(document).ready(function() {
     }
   };
 
+  select = {
+    attach: function (context, settings) {
+      $("select").select2({
+        allowClear:true
+       // placeholder: 'Search for a disease'
+      });
+    }
+  };
+
   slider.attach();
+  select.attach();
 });

@@ -1,0 +1,155 @@
+.messages,
+.answers {
+  @include rem(margin-bottom, 106px);
+
+  &__item {
+    @include rem(border-radius, 3px);
+    @include rem(margin-bottom, 12px);
+    @include rem(padding, 10px 0 10px 22px);
+    align-items: center;
+    background-color: color(main-bg);
+    box-shadow: $main-shadow-small;
+    display: flex;
+
+    .material-icons {
+      color: color(main-green);
+    }
+
+    &:hover {
+      box-shadow: $main-shadow-big;
+    }
+
+    &:hover h3 {
+      font-weight: $semi-bold;
+    }
+  }
+
+  &__avatar {
+    @include rem(margin, 0 21px 0 18px);
+    flex: 1 0 auto;
+  }
+
+  &__body {
+    @include rem(padding-right, 70px);
+    @include rem(padding-top, 12px);
+    @include rem(min-width, 475px);
+    border-right: 1px solid color(messages-border);
+  }
+
+  &__chart {
+    @include rem(padding, 52px);
+    @include rem(min-width, 105px);
+    border-right: 1px solid color(messages-border);
+    display: flex;
+    justify-content: center;
+
+    i:first-child {
+      @include rem(margin-right, 18px);
+    }
+
+    i.material-icons {
+      color: color(messages-grey-icon);
+    }
+
+    i.material-icons.active {
+      color: color(messages-green);
+    }
+  }
+
+  &__title h3 {
+    @include lh(21, 14);
+    @include rem(margin-bottom, 10px);
+    display: inline-block;
+    font-weight: $normal;
+    letter-spacing: .54px;
+  }
+
+  &__town {
+    @include lh(21, 12);
+    @include rem(font-size, 12px);
+    @include rem(margin-bottom, 10px);
+
+    i {
+      @include rem(font-size, 14px);
+      @include rem(margin-right, 7px);
+      @include rem(top, 2px);
+      display: inline-block;
+      position: relative;
+    }
+  }
+
+  &__date {
+    @include rem(margin-bottom, 12px);
+
+    span {
+      @include lh(21, 14);
+      @include rem(font-size, 14px);
+      color: color(messages-data);
+      letter-spacing: .54px;
+    }
+
+    span:first-child {
+      @include rem(margin-right, 17px);
+      display: inline-block;
+    }
+  }
+
+  &-status {
+    @include rem(min-width, 132px);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__status {
+    @include rem(padding, 3px 0 3px 27px);
+    background: url('../img/sprites/time.png') no-repeat center left;
+
+    &.deadline {
+      background: url('../img/sprites/fire.png') no-repeat center left;
+    }
+  }
+}
+
+.answers {
+  &__item {
+    @include rem(padding-right, 126px);
+  }
+
+  &-status {
+    border-right: 1px solid color(messages-border);
+    min-width: auto;
+  }
+
+  &__status {
+    @include rem(padding, 56px 23px);
+    background: none;
+
+    &.accepted,
+    &.denied {
+      @include rem(font-size, 12px);
+      font-weight: 400;
+      letter-spacing: .47px;
+    }
+
+    &.accepted {
+      color: color(main-green);
+    }
+
+    &.denied {
+      color: color(denied);
+    }
+  }
+
+  &__body {
+    @include rem(min-width, 447px);
+  }
+}
+
+.messages__press {
+  .messages__body {
+    border-right: 0;
+    min-width: 100%;
+    padding-right: 0;
+  }
+}

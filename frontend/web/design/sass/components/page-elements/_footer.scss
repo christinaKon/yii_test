@@ -10,6 +10,7 @@
     a {
       @include rem(font-size, 15px);
       @include rem(margin-right, 60px);
+      color: color(main-purple);
       font-weight: $semi-bold;
       padding: 0;
     }
@@ -31,5 +32,55 @@
       @include rem(font-size, 14px);
       font-weight: $normal;
     }
+  }
+}
+
+.footer-closed {
+  p {
+    @include lh(21, 12);
+    @include rem(font-size, 12px);
+    font-weight: $normal;
+    letter-spacing: .47px;
+  }
+
+  span {
+    @include lh(28, 18);
+    @include rem(font-size, 18px);
+    color: color(main-green);
+    font-weight: $normal;
+  }
+
+  &__contacts {
+    @include rem(margin-top, 15px);
+  }
+
+  .group-full-width {
+    @include rem(margin-bottom, 10px);
+  }
+
+  &__phone {
+    @include rem(margin-bottom, 13px);
+  }
+
+  a[href*='instagram.com'],
+  a[href*='insta.com'] {
+    @include sprite($insta);
+    display: inline-block;
+  }
+
+  &__copyright div {
+    color: color(footer-copyright);
+    letter-spacing: .54px;
+  }
+
+  .group-two-column {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }

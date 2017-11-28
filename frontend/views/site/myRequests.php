@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'Journalist requests';
+$this->title = 'My requests';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
@@ -32,6 +32,8 @@ $this->params['breadcrumbs'][] = $this->title;
               </select>
             </form>
           </div>
+
+          <div class="requests-top-bar"></div>
 
           <?= $this->render('blocks/messages') ?>
         </div>

@@ -2,20 +2,19 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'Journalist requests';
+$this->title = 'Expert requests';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
 
-<div class="site-journalist-requests">
+<div class="site-expert-requests">
   <?= $this->render('blocks/headerClosed') ?>
 
   <div class="body-content">
     <div class="container">
       <div class="row">
         <div class="col-md-3">
-          <div class="create request button"><a href="#">Создать запрос</a></div>
-          <?= $this->render('blocks/journalistsBar') ?>
+          <?= $this->render('blocks/expertsBar') ?>
         </div>
 
         <div class="col-md-9">
@@ -33,7 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </form>
           </div>
 
-          <?= $this->render('blocks/messages') ?>
+          <?= $this->render('blocks/answers') ?>
         </div>
       </div>
     </div>

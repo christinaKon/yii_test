@@ -1,5 +1,4 @@
 .sidebar {
-  @include rem(margin-top, 16px);
   @include rem(padding-bottom, 15px);
   @include rem(padding-top, 15px);
   background-color: color(main-bg);
@@ -23,15 +22,15 @@
     text-decoration: none;
 
     &:hover,
-    &:active {
-      border-right-color: color(active-item-bd);
+    &.active {
+      border-right-color: color(main-green);
     }
 
     &:hover,
-    &:active,
+    &.active,
     &:hover i,
-    &:active i {
-      color: color(sidebar);
+    &.active i {
+      color: color(main-green);
     }
 
     i {
@@ -43,16 +42,31 @@
   }
 
   .divider-horizontal {
-    @include rem(margin, 32px 20px 20px);
-    background-color: color(primary-tab-bd);
+    @include rem(margin, 15px 20px 20px);
+    background-color: color(main-green);
     height: 2px;
   }
 
   .subscribes {
     @include rem(letter-spacing, .54px);
-    @include rem(padding, 0 20px 28px);
+    @include rem(padding, 0 20px 98px);
     color: color(sidebar-item);
     display: block;
     font-weight: $semi-bold;
+  }
+
+  &-banner {
+    @include rem(border-radius, 3px);
+    @include rem(margin-top, 26px);
+    @include rem(padding, 34px 16px);
+    background-color: color(main-bg);
+    border: 1px solid color(banner-border);
+    box-shadow: $main-shadow-small;
+
+    p {
+      @include rem(margin-bottom, 25px);
+      letter-spacing: .54px;
+      text-align: center;
+    }
   }
 }

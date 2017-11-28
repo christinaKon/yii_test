@@ -33,11 +33,13 @@ var $files = [
 var $css = [
   './node_modules/slick-carousel/slick/slick.css',
   './node_modules/slick-carousel/slick/slick-theme.css',
+  './node_modules/select2/dist/css/select2.css',
   './dist/main.css'
 ];
 
 var $js = [
   './node_modules/slick-carousel/slick/slick.js',
+  './node_modules/select2/dist/js/select2.full.js',
   './js/custom.js'
 ];
 

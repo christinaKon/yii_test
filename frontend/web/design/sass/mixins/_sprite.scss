@@ -9,6 +9,17 @@
 //
 // At the bottom of this section, we provide information about the spritesheet itself
 // $spritesheet: width height image $spritesheet-sprites;
+$fire-name: 'fire';
+$fire-x: 173px;
+$fire-y: 33px;
+$fire-offset-x: -173px;
+$fire-offset-y: -33px;
+$fire-width: 16px;
+$fire-height: 24px;
+$fire-total-width: 225px;
+$fire-total-height: 133px;
+$fire-image: 'sprite.png';
+$fire: (173px, 33px, -173px, -33px, 16px, 24px, 225px, 133px, 'sprite.png', 'fire', );
 $for-exp-name: 'for-exp';
 $for-exp-x: 140px;
 $for-exp-y: 0px;
@@ -53,10 +64,32 @@ $help-2-total-width: 225px;
 $help-2-total-height: 133px;
 $help-2-image: 'sprite.png';
 $help-2: (0px, 69px, 0px, -69px, 58px, 64px, 225px, 133px, 'sprite.png', 'help-2', );
+$insta-name: 'insta';
+$insta-x: 140px;
+$insta-y: 33px;
+$insta-offset-x: -140px;
+$insta-offset-y: -33px;
+$insta-width: 32px;
+$insta-height: 28px;
+$insta-total-width: 225px;
+$insta-total-height: 133px;
+$insta-image: 'sprite.png';
+$insta: (140px, 33px, -140px, -33px, 32px, 28px, 225px, 133px, 'sprite.png', 'insta', );
+$time-name: 'time';
+$time-x: 190px;
+$time-y: 33px;
+$time-offset-x: -190px;
+$time-offset-y: -33px;
+$time-width: 18px;
+$time-height: 18px;
+$time-total-width: 225px;
+$time-total-height: 133px;
+$time-image: 'sprite.png';
+$time: (190px, 33px, -190px, -33px, 18px, 18px, 225px, 133px, 'sprite.png', 'time', );
 $spritesheet-width: 225px;
 $spritesheet-height: 133px;
 $spritesheet-image: 'sprite.png';
-$spritesheet-sprites: ($for-exp, $for-jour, $help-1, $help-2, );
+$spritesheet-sprites: ($fire, $for-exp, $for-jour, $help-1, $help-2, $insta, $time, );
 $spritesheet: (225px, 133px, 'sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables

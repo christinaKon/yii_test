@@ -9,7 +9,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <div class="site-questions-answers">
   <div class="body-content">
-    <h1 class="container">Вопросы и ответы</h1>
+    <h1 class="container h1">Вопросы и ответы</h1>
 
     <?= $this->render('blocks/primaryTabs') ?>
 

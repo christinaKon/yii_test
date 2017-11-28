@@ -21,6 +21,32 @@
     box-shadow: $main-shadow-small
     color: color(header-menu)
 
+  &.create
+    +rem(border-radius, 3px)
+    +rem(font-size, 14px)
+    +rem(height, 42px)
+    +rem(margin-bottom, 18px)
+    align-items: center
+    background-color: color(main-bg)
+    box-shadow: $main-shadow-small
+    display: flex
+    justify-content: center
+    width: 100%
+
+    a
+      +lh(20, 14)
+      color: color(main-green)
+      font-weight: $semi-bold
+
+  &.shadow
+    +rem(font-size, 14px)
+    +rem(max-width, 248px)
+    +rem(padding, 16px 29px)
+    box-shadow: 0 0 8px color(btn-green-shadow)
+    color: color(btn-green-shadow-text)
+    display: inline-block
+    text-align: center
+
 =slick-dots
   .slick-dots
     +rem(bottom, -37px)
@@ -41,3 +67,9 @@
 
     .slick-active button
       background: color(green-dots)
+
+=clr
+  &:after
+    clear: both
+    content: ''
+    display: block

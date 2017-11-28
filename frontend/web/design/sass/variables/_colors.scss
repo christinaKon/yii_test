@@ -13,6 +13,8 @@ $chroma: add-colors((
   green1:        #1eb306,
   green2:        #23b400,
   green3:        #12881b,
+  green4:        #379237,
+  green5:        rgba(0, 138, 0, 0.49),
   greyy:         #fafafa,
   greyy1:        #bdbdbd,
   greyy2:        #eee,
@@ -20,7 +22,10 @@ $chroma: add-colors((
   greyy4:        #e2e2e2,
   greyy5:        #afafaf,
   greyy6:        #626262,
+  greyy7:        rgba(153, 153, 153, 0.1),
+  greyy8:        #eaeaea,
   purple:        #5321a8,
+  red:           #dc000e,
   white:         #fff,
   white1:        rgba(255, 255, 255, 0.87),
 ));
@@ -29,38 +34,57 @@ $chroma: add-colors((
 $chroma: define-color-scheme('functional', 'Colors used by functional parts of the design.');
 $chroma: add-colors('functional', (
   // Colors used in the main content area.
-  text:               'black',
+  text:                 'black',
 
-  btn-green-bg:       'green',
-  btn-green-text:     'white1',
+  banner-border:        'green',
+  btn-green-bg:         'green',
+  btn-green-shadow-text: 'white',
+  btn-green-shadow:     'green5',
+  btn-green-text:       'white1',
 
-  bg-white:           'white',
-  footer-bg:          'greyy2',
+  bg-white:             'white',
+  footer-bg:            'greyy2',
 
-  active-item-bd:     'green',
+  active-item-bd:       'green',
+  archive-search:       'greyy7',
+  archive-search-text:  'greyy6',
 
-  green-dots:         'green',
-  green-company:      'green2',
-  greyy-dots:         'greyy1',
+  create-button:        'green3',
 
-  header-link-border: 'green',
-  header-menu:        'greyy3',
-  header-separator:   'greyy4',
+  denied:               'red',
 
-  main-bg:            'greyy',
-  main-black:         'black1',
-  main-green:         'green1',
-  main-purple:        'purple',
-  main-shadow:        'black',
+  footer-copyright:     'greyy6',
 
-  sidebar:            'green3',
-  sidebar-item:       'greyy6',
+  green-dots:           'green',
+  green-company:        'green2',
+  greyy-dots:           'greyy1',
 
-  bell:               'greyy5',
-  new-message:        'white',
+  header-link-border:   'green',
+  header-menu:          'greyy3',
+  header-separator:     'greyy4',
 
-  primary-tab-bd:     'greyy2',
-  primary-tab-item:   'greyy3'
+  main-bg:              'greyy',
+  main-black:           'black1',
+  main-green:           'green1',
+  main-purple:          'purple',
+  main-shadow:          'black',
+  messages-border:      'greyy2',
+  messages-data:        'greyy6',
+  messages-green:       'green4',
+  messages-grey-icon:   'greyy8',
+
+  search-border:        'greyy2',
+  select:               'greyy2',
+  select-arrows:        'greyy3',
+  select-text:          'greyy5',
+  sidebar:              'green3',
+  sidebar-item:         'greyy6',
+
+  bell:                 'greyy5',
+  new-message:          'white',
+
+  primary-tab-bd:       'greyy2',
+  primary-tab-item:     'greyy3'
 ));
 
 $chroma-active-scheme: 'functional';

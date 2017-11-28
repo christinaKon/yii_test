@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'Journalist requests';
+$this->title = 'Press releases';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
@@ -16,7 +16,10 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="col-md-3">
           <div class="create button"><a href="#">Добавить релиз</a></div>
           <aside class="sidebar">
-            <div class="all-releases"><a href="#">Все релизы</a></div>
+            <ul class="all-releases sidebar__list">
+              <li class="sidebar__item active"><a class="active" href="/site/press-releases"><i class="material-icons">import_contacts</i>Все релизы</a></li>
+              <li class="sidebar__item active"><a href="/site/marked-releases"><i class="material-icons">star</i>Отмеченные</a></li>
+            </ul>
           </aside>
         </div>
 
@@ -32,4 +35,6 @@ $this->params['breadcrumbs'][] = $this->title;
       </div>
     </div>
   </div>
+
+  <?= $this->render('blocks/footerClosed') ?>
 </div>

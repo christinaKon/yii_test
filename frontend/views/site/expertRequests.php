@@ -32,14 +32,11 @@ $this->params['breadcrumbs'][] = $this->title;
             </form>
           </div>
 
-          <div class="requests-top-bar">
-            <h3>Срочные запросы</h3>
-            <div class="answers-archive"><a href="#">Архив ответов</a></div>
-          </div>
-
           <?= $this->render('blocks/messages') ?>
         </div>
       </div>
     </div>
   </div>
+
+  <?= $this->render('blocks/footerClosed') ?>
 </div>
