@@ -1993,42 +1993,55 @@ input[type='radio'] {
   background: url("../img/sprites/fire.png") no-repeat center left; }
 
 /* line 115, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_messages.scss */
-.answers__item {
-  padding-right: 126px;
-  padding-right: 7.875rem; }
-
-/* line 119, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_messages.scss */
 .answers-status {
   border-right: 1px solid #eee;
   min-width: auto; }
 
-/* line 124, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_messages.scss */
+/* line 120, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_messages.scss */
 .answers__status {
   padding: 56px 23px;
   padding: 3.5rem 1.4375rem;
   background: none; }
 
-/* line 128, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_messages.scss */
+/* line 124, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_messages.scss */
 .answers__status.accepted, .answers__status.denied {
   font-size: 12px;
   font-size: 0.75rem;
   font-weight: 400;
   letter-spacing: .47px; }
 
-/* line 135, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_messages.scss */
+/* line 131, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_messages.scss */
 .answers__status.accepted {
   color: #1eb306; }
 
-/* line 139, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_messages.scss */
+/* line 135, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_messages.scss */
 .answers__status.denied {
   color: #dc000e; }
 
-/* line 144, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_messages.scss */
+/* line 140, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_messages.scss */
 .answers__body {
   min-width: 447px;
   min-width: 27.9375rem; }
 
+/* line 144, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_messages.scss */
+.answers-closed {
+  min-width: 139px;
+  min-width: 8.6875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
 /* line 150, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_messages.scss */
+.answers__closed {
+  padding: 3px 0 3px 27px;
+  padding: 0.1875rem 0 0.1875rem 1.6875rem;
+  background: url("../img/sprites/time.png") no-repeat center left;
+  letter-spacing: .54px; }
+
+/* line 158, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_messages.scss */
 .messages__press .messages__body {
   border-right: 0;
   min-width: 100%;

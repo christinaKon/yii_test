@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'Expert requests';
+$this->title = 'My answers';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
@@ -37,6 +37,4 @@ $this->params['breadcrumbs'][] = $this->title;
       </div>
     </div>
   </div>
-
-  <?= $this->render('blocks/footerClosed') ?>
 </div>

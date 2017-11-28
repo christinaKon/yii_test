@@ -9,6 +9,7 @@
         <div class="answers__date"><span class="answers__date_day">12.10.2017</span><span class="answers__date_time">10:54</span></div>
       </div>
       <div class="answers-status"><div class="answers__status accepted">Принят</div></div>
+      <div class="answers-closed"><div class="answers__closed">Закрыт</div></div>
     </div>
     <div class="answers__item">
       <div class="answers__archive"><i class="material-icons">archive</i></div>
@@ -19,6 +20,7 @@
         <div class="answers__date"><span class="answers__date_day">12.10.2017</span><span class="answers__date_time">10:54</span></div>
       </div>
       <div class="answers-status"><div class="answers__status denied">Отклонен</div></div>
+      <div class="answers-closed"><div class="answers__closed">Закрыт</div></div>
     </div>
     <div class="answers__item">
       <div class="answers__archive"><i class="material-icons">archive</i></div>
@@ -29,6 +31,7 @@
         <div class="answers__date"><span class="answers__date_day">12.10.2017</span><span class="answers__date_time">10:54</span></div>
       </div>
       <div class="answers-status"><div class="answers__status denied">Отклонен</div></div>
+      <div class="answers-closed"><div class="answers__closed">Закрыт</div></div>
     </div>
     <div class="answers__item">
       <div class="answers__archive"><i class="material-icons">archive</i></div>
@@ -39,6 +42,7 @@
         <div class="answers__date"><span class="answers__date_day">12.10.2017</span><span class="answers__date_time">10:54</span></div>
       </div>
       <div class="answers-status"><div class="answers__status accepted">Принят</div></div>
+      <div class="answers-closed"><div class="answers__closed">Закрыт</div></div>
     </div>
     <div class="answers__item">
       <div class="answers__archive"><i class="material-icons">archive</i></div>
@@ -49,6 +53,7 @@
         <div class="answers__date"><span class="answers__date_day">12.10.2017</span><span class="answers__date_time">10:54</span></div>
       </div>
       <div class="answers-status"><div class="answers__status denied">Отклонен</div></div>
+      <div class="answers-closed"><div class="answers__closed">Закрыт</div></div>
     </div>
   </div>
 </div>

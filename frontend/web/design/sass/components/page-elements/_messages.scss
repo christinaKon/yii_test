@@ -112,10 +112,6 @@
 }
 
 .answers {
-  &__item {
-    @include rem(padding-right, 126px);
-  }
-
   &-status {
     border-right: 1px solid color(messages-border);
     min-width: auto;
@@ -143,6 +139,18 @@
 
   &__body {
     @include rem(min-width, 447px);
+  }
+
+  &-closed {
+    @include rem(min-width, 139px);
+    display: flex;
+    justify-content: center;
+  }
+
+  &__closed {
+    @include rem(padding, 3px 0 3px 27px);
+    background: url('../img/sprites/time.png') no-repeat center left;
+    letter-spacing: .54px;
   }
 }
 
