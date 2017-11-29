@@ -301,4 +301,14 @@ class SiteController extends Controller
     {
         return $this->render('myAnswers');
     }
+
+    /**
+     * Displays Blacklist page.
+     *
+     * @return mixed
+     */
+    public function actionBlacklist()
+    {
+        return $this->render('blacklist');
+    }
 }

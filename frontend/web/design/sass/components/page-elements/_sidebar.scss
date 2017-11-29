@@ -5,26 +5,14 @@
   border-radius: 2px;
   box-shadow: $main-shadow-small;
 
-  li {
-    padding: 1px 0;
-  }
-
   li a {
     @include rem(letter-spacing, .54px);
-    @include rem(margin-bottom, 12px);
     @include rem(padding-left, 25px);
-    @include rem(margin-top, 12px);
     align-items: center;
-    border-right: 4px solid transparent;
     color: color(sidebar-item);
     display: flex;
     font-weight: $semi-bold;
     text-decoration: none;
-
-    &:hover,
-    &.active {
-      border-right-color: color(main-green);
-    }
 
     &:hover,
     &.active,
@@ -36,8 +24,34 @@
     i {
       @include rem(font-size, 16px);
       @include rem(margin-right, 25px);
-      color: color(sidebar-item);
+      color: color(sidebar-icon);
       width: 14px;
+    }
+  }
+
+  li {
+    @include rem(margin-bottom, 20px);
+    @include rem(margin-top, 12px);
+    align-items: center;
+    border-right: 4px solid transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 0;
+
+    &:hover,
+    &.active,
+    &:hover .number,
+    &.active .number {
+      border-right-color: color(main-green);
+      color: color(main-green);
+    }
+  }
+
+  li.active,
+  li.active-trail {
+    a,
+    i {
+      color: color(main-green);
     }
   }
 
@@ -45,18 +59,50 @@
     @include rem(margin, 15px 20px 20px);
     background-color: color(primary-tab-bd);
     height: 2px;
+
+    &.people {
+      @include rem(margin-bottom, 28px);
+    }
   }
 
-  .subscribes {
+  .subscribes,
+  .groups,
+  .create-group {
     @include rem(letter-spacing, .54px);
     @include rem(padding, 0 20px 98px);
     color: color(sidebar-item);
     display: block;
     font-weight: $semi-bold;
+    text-decoration: none;
+
+    &:hover,
+    &.active {
+      color: color(main-green);
+    }
+  }
+
+  .groups,
+  .create-group {
+    @include rem(padding, 0 20px 22px);
+  }
+
+  .create-group {
+    color: color(main-purple);
+    font-weight: $normal;
+  }
+
+  .number {
+    @include rem(margin-right, 25px);
+    @include rem(min-width, 30px);
+    color: color(sidebar-item);
+    font-weight: $semi-bold;
+    text-align: center;
+    text-decoration: none;
   }
 
   &-banner {
     @include rem(border-radius, 3px);
+    @include rem(margin-bottom, 116px);
     @include rem(margin-top, 26px);
     @include rem(padding, 34px 16px);
     background-color: color(main-bg);

@@ -21,7 +21,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="col-md-9">
           <div class="requests-filter">
             <form action="">
-              <input type="search">
+              <input type="search" placeholder="Поиск">
               <select name="industries" id="industries">
                 <option value="">Все отрасли</option>
                 <option value="">Lorem</option>

@@ -1,5 +1,6 @@
 .messages,
-.answers {
+.answers,
+.blacklist-people {
   @include rem(margin-bottom, 106px);
 
   &__item {
@@ -159,5 +160,83 @@
     border-right: 0;
     min-width: 100%;
     padding-right: 0;
+  }
+}
+
+.blacklist-people {
+  @include rem(margin-bottom, 106px);
+
+  &__item {
+    .material-icons {
+      color: color(people-icons);
+    }
+  }
+
+  &__avatar {
+    @include rem(margin, 0 21px 0 0);
+    flex: none;
+  }
+
+  &__body {
+    @include rem(padding-right, 70px);
+    @include rem(padding-top, 12px);
+    @include rem(min-width, 550px);
+  }
+
+  &__status p {
+    @include lh(21, 12);
+    @include rem(font-size, 12px);
+    @include rem(margin-bottom, 6px);
+    display: inline-block;
+    font-weight: $normal;
+    letter-spacing: .47px;
+    text-transform: uppercase;
+  }
+
+  &__name {
+    @include lh(21, 14);
+    @include rem(font-size, 14px);
+    @include rem(margin-bottom, 6px);
+    display: block;
+    font-weight: $semi-bold;
+    letter-spacing: .54px;
+  }
+
+  &__town {
+    @include lh(21, 12);
+    @include rem(font-size, 12px);
+    @include rem(margin-bottom, 6px);
+    display: block;
+
+    strong {
+      @include lh(21, 12);
+      @include rem(font-size, 12px);
+      font-weight: $semi-bold;
+    }
+  }
+
+  &__write {
+    @include rem(padding, 30px 20px);
+    border-right: 1px solid color(messages-border);
+
+    a {
+      @include btn;
+    }
+  }
+
+  &-closed {
+    @include rem(width, 68px);
+    display: flex;
+    justify-content: center;
+
+    i {
+      @include rem(font-size, 16px);
+      font-weight: $normal;
+    }
+  }
+
+  &__status {
+    background: none;
+    padding: 0;
   }
 }

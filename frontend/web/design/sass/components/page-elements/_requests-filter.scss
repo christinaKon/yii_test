@@ -19,9 +19,14 @@
     background: url('../img/icons/search-icon.png') no-repeat center left 24px;
     border: 0;
     border-right: 1px solid color(search-border);
+    color: color(text);
     display: flex;
     justify-content: center;
     width: 100%;
+
+    @include placeholder {
+      color: color(text);
+    }
   }
 
   .select2-container--default,
