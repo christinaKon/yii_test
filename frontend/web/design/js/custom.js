@@ -124,7 +124,6 @@ $(document).ready(function() {
       $(document).on('click', '.my-themes .add-theme', function(e) {
         $addTheme.before(newTheme);
         $('.my-theme').last().find('input').focus();
-        console.log(3);
       });
 
       $(document).on('focus', '.my-theme input', function(event) {
@@ -132,7 +131,6 @@ $(document).ready(function() {
       });
 
       $(document).on('blur', '.my-theme input', function(event) {
-        console.log(4);
         // $('.my-theme').last().find('input').focus();
         $(this).closest('div').removeClass('focused');
         if (!$(this).val().length || $(this).val() == 'undefined') {

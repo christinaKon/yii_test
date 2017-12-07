@@ -72,13 +72,17 @@
   }
 
   .description {
+    @include rem(margin-bottom, 30px);
     @include rem(margin-left, 23px);
     @include rem(margin-top, 28px);
     @include rem(max-width, 380px);
 
     &.top {
-      @include rem(margin-bottom, 30px);
       margin-left: 0;
+    }
+
+    &.right-top {
+      margin-top: 0;
     }
 
     p {
@@ -93,6 +97,7 @@
   .upload-photo {
     @include rem(height, 140px);
     @include rem(margin-left, 22px);
+    @include rem(margin-top, 5px);
     @include rem(width, 140px);
     position: relative;
   }
@@ -134,19 +139,19 @@
     }
   }
 
-  &.experts {
+  &.about {
     input[type="text"] {
       @include rem(margin-bottom, 14px);
     }
+  }
 
-    .my-theme input {
-      margin-bottom: 0;
-    }
+  .my-theme input {
+    margin-bottom: 0;
+  }
 
-    .my-themes-wrapper {
-      @include rem(margin-bottom, 30px);
-      @include rem(margin-top, 15px);
-    }
+  .my-themes-wrapper {
+    @include rem(margin-bottom, 30px);
+    @include rem(margin-top, 15px);
   }
 
   .add-theme {
@@ -198,6 +203,22 @@
       line-height: 1;
       position: absolute;
       z-index: 3;
+    }
+  }
+
+  .status {
+    display: block;
+
+    input {
+      @include rem(top, 2px);
+      position: relative;
+    }
+
+    > label {
+      @include rem(font-size, 14px);
+      @include rem(margin-right, 20px);
+      color: color(main-black);
+      letter-spacing: .54px;
     }
   }
 }

@@ -2,12 +2,12 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'Profile Experts';
+$this->title = 'Profile about-me';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
 
-<div class="site-profile-experts">
+<div class="site-profile-about-me">
   <?= $this->render('blocks/headerClosed') ?>
 
   <div class="body-content">
@@ -16,11 +16,19 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="col-md-3">
           <?= $this->render('blocks/sidebarProfile') ?>
         </div>
-
         <div class="col-md-9">
-          <form action="#" class="experts about wrapper">
-            <div class="form-item">
-              <div class="description top"><p>После сохранения данных профиль эксперта будет опубликован, и вы начнете представлять этого человека на сайте. Журналисты смогут получить его комментарии, связавшись с вами</p></div>
+          <form action="#" class="about-me about wrapper">
+            <div class="form-item-wrapper status-wrapper">
+              <div class="form-item status" id="status">
+                <div class="title"><label for="status" class="required">Статус на сайте</label></div>
+                <input type="checkbox" id="expert">
+                <label for="expert">Эксперт</label>
+                <input type="checkbox" id="journalist">
+                <label for="journalist">Журналист</label>
+              </div>
+              <div class="description right-top">
+                <p>Журналисты публикуют запросы. Эксперты — отвечают на них, а еще — выпускают релизы. Можно выбрать оба статуса — но придется указать и СМИ, и компанию.</p>
+              </div>
             </div>
             <div class="form-item-wrapper">
               <div class="form-item">
@@ -36,24 +44,6 @@ $this->params['breadcrumbs'][] = $this->title;
               <div class="upload-photo">
                 <img src="/frontend/web/design/img/userpic.png" alt="">
                 <input type="file" class="upload">
-              </div>
-            </div>
-            <div class="form-item">
-              <div class="name-of-company">
-                <label class="required" for="name-of-company">Название компании</label>
-                <input type="text" id="name-of-company">
-              </div>
-              <div class="post">
-                <label class="required" for="post">Должность</label>
-                <input type="text" id="post">
-              </div>
-              <div class="site">
-                <label for="site">Сайт</label>
-                <input type="text" id="site">
-              </div>
-              <div class="town">
-                <label class="required" for="town">Город</label>
-                <input type="text" id="town">
               </div>
             </div>
             <div class="form-item-wrapper">

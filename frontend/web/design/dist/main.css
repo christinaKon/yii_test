@@ -2774,6 +2774,8 @@ label.required:after {
 
 /* line 74, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .description {
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   margin-left: 23px;
   margin-left: 1.4375rem;
   margin-top: 28px;
@@ -2781,13 +2783,15 @@ label.required:after {
   max-width: 380px;
   max-width: 23.75rem; }
 
-/* line 79, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
+/* line 80, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .description.top {
-  margin-bottom: 30px;
-  margin-bottom: 1.875rem;
   margin-left: 0; }
 
 /* line 84, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
+.wrapper .description.right-top {
+  margin-top: 0; }
+
+/* line 88, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .description p {
   line-height: 1.5;
   font-size: 12px;
@@ -2797,17 +2801,19 @@ label.required:after {
   color: #191919;
   letter-spacing: .47px; }
 
-/* line 93, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
+/* line 97, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .upload-photo {
   height: 140px;
   height: 8.75rem;
   margin-left: 22px;
   margin-left: 1.375rem;
+  margin-top: 5px;
+  margin-top: 0.3125rem;
   width: 140px;
   width: 8.75rem;
   position: relative; }
 
-/* line 100, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
+/* line 105, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .upload {
   height: 140px;
   height: 8.75rem;
@@ -2826,11 +2832,11 @@ label.required:after {
   top: 0;
   z-index: 2; }
 
-/* line 116, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
+/* line 121, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .upload:focus {
   outline: none; }
 
-/* line 120, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
+/* line 125, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .upload:after {
   font-size: 12px;
   font-size: 0.75rem;
@@ -2853,23 +2859,23 @@ label.required:after {
   top: 0;
   width: 100%; }
 
-/* line 138, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper.experts input[type="text"] {
+/* line 143, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
+.wrapper.about input[type="text"] {
   margin-bottom: 14px;
   margin-bottom: 0.875rem; }
 
-/* line 142, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper.experts .my-theme input {
+/* line 148, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
+.wrapper .my-theme input {
   margin-bottom: 0; }
 
-/* line 146, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper.experts .my-themes-wrapper {
+/* line 152, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
+.wrapper .my-themes-wrapper {
   margin-bottom: 30px;
   margin-bottom: 1.875rem;
   margin-top: 15px;
   margin-top: 0.9375rem; }
 
-/* line 152, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
+/* line 157, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .add-theme {
   border-radius: 13px;
   border-radius: 0.8125rem;
@@ -2878,30 +2884,30 @@ label.required:after {
   background-color: #eee;
   display: inline-block; }
 
-/* line 158, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
+/* line 163, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .add-theme i {
   font-size: 12px;
   font-size: 0.75rem;
   color: #626262;
   line-height: 1; }
 
-/* line 165, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
+/* line 170, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .my-themes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-/* line 169, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
+/* line 174, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .my-theme {
   margin-right: 16px;
   margin-right: 1rem;
   position: relative; }
 
-/* line 174, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
+/* line 179, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .my-theme.focused i {
   display: none; }
 
-/* line 179, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
+/* line 184, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .my-theme input {
   border-radius: 13px;
   border-radius: 0.8125rem;
@@ -2919,7 +2925,7 @@ label.required:after {
   min-height: auto;
   width: auto; }
 
-/* line 193, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
+/* line 198, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .my-theme i {
   font-size: 12px;
   font-size: 0.75rem;
@@ -2931,6 +2937,25 @@ label.required:after {
   line-height: 1;
   position: absolute;
   z-index: 3; }
+
+/* line 209, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
+.wrapper .status {
+  display: block; }
+
+/* line 212, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
+.wrapper .status input {
+  top: 2px;
+  top: 0.125rem;
+  position: relative; }
+
+/* line 217, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
+.wrapper .status > label {
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin-right: 20px;
+  margin-right: 1.25rem;
+  color: #191919;
+  letter-spacing: .54px; }
 
 /* line 1, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_questions-answers.scss */
 .questions-answers {
