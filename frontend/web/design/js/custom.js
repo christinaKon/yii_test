@@ -116,6 +116,32 @@ $(document).ready(function() {
     }
   };
 
+  addTheme = {
+    attach: function(el) {
+      var newTheme  = ('<div class="my-theme"><input type="text"><i class="material-icons">remove_circle</i></div>');
+      var $addTheme = $('.my-themes .add-theme');
+
+      $(document).on('click', '.my-themes .add-theme', function(e) {
+        $addTheme.before(newTheme);
+        $('.my-theme').last().find('input').focus();
+        console.log(3);
+      });
+
+      $(document).on('focus', '.my-theme input', function(event) {
+        $(this).closest('div').addClass('focused');
+      });
+
+      $(document).on('blur', '.my-theme input', function(event) {
+        console.log(4);
+        // $('.my-theme').last().find('input').focus();
+        $(this).closest('div').removeClass('focused');
+        if (!$(this).val().length || $(this).val() == 'undefined') {
+          $(this).closest('div').remove();
+        }
+      });
+    }
+  }
+
   // headerScroll = {
   //   attach: function (context, settings) {
   //     var $thisObj = this;
@@ -150,6 +176,7 @@ $(document).ready(function() {
   select.attach();
   addButton.attach();
   helpScroll.attach();
+  addTheme.attach();
   // headerScroll.attach();
 });
 

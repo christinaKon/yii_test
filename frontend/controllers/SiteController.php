@@ -381,4 +381,14 @@ class SiteController extends Controller
     {
         return $this->render('profilePortfolio');
     }
+
+        /**
+     * Displays Profile Experts page.
+     *
+     * @return mixed
+     */
+    public function actionProfileExperts()
+    {
+        return $this->render('profileExperts');
+    }
 }

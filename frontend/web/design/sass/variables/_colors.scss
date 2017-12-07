@@ -24,6 +24,7 @@ $chroma: add-colors((
   greyy6:        #626262,
   greyy7:        rgba(153, 153, 153, 0.1),
   greyy8:        #eaeaea,
+  greyy9:        rgba(33, 33, 33, .75),
   purple:        #5321a8,
   purple1:       #673ab7,
   red:           #dc000e,
@@ -37,6 +38,10 @@ $chroma: define-color-scheme('functional', 'Colors used by functional parts of t
 $chroma: add-colors('functional', (
   // Colors used in the main content area.
   text:                 'black',
+
+  add-theme-bg:         'greyy2',
+  add-theme-icon:       'greyy6',
+  add-theme-text:       'greyy6',
 
   banner-border:        'green',
   black-btn-text:       'greyy3',
@@ -98,7 +103,10 @@ $chroma: add-colors('functional', (
   new-message:          'white',
 
   primary-tab-bd:       'greyy2',
-  primary-tab-item:     'greyy3'
+  primary-tab-item:     'greyy3',
+
+  upload-text:          'white',
+  upload-shadow:        'greyy9'
 ));
 
 $chroma-active-scheme: 'functional';

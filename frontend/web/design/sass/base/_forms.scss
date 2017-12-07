@@ -52,15 +52,25 @@ input[type='radio'] {
   // }
 }
 
-input[type="text"] {
+input[type="text"],
+textarea {
   @include rem(border-radius, 3px);
+  @include rem(font-size, 12px);
   @include rem(margin-bottom, 29px);
   @include rem(min-height, 32px);
-  @include rem(padding-left, 24px);
+  @include rem(padding-left, 14px);
   background-color: color(main-bg);
   border: 2px solid color(input-border);
   display: inline-block;
   width: 100%;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+textarea {
+  @include rem(min-height, 175px);
 }
 
 input[type='button'],
