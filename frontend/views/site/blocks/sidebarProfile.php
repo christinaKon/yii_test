@@ -16,7 +16,7 @@
   <span class="title">Настройка аккаунта</span>
   <ul class="sidebar__list-bottom">
     <li class="sidebar__item"><a href="#"><i class="material-icons">https</i>Логин-пароль</a></li>
-    <li class="sidebar__item"><a href="#"><i class="material-icons">notifications_none</i>Уведомления</a></li>
+    <li class="sidebar__item"><a href="/site/profile-notifications"><i class="material-icons">notifications_none</i>Уведомления</a></li>
     <li class="sidebar__item purple"><a href="#"><i class="material-icons">assignment_ind</i>PRO аккаунт</a></li>
   </ul>
 </aside>

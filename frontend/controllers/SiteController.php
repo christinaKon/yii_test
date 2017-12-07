@@ -401,4 +401,14 @@ class SiteController extends Controller
     {
         return $this->render('profileAboutMe');
     }
+
+        /**
+     * Displays Profile Notification page.
+     *
+     * @return mixed
+     */
+    public function actionProfileNotifications()
+    {
+        return $this->render('profileNotifications');
+    }
 }

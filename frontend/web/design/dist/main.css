@@ -992,18 +992,31 @@ select:hover {
   cursor: pointer; }
 
 /* line 35, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
-input[type='checkbox'] {
-  -webkit-appearance: checkbox;
-  -moz-appearance: checkbox;
-  appearance: checkbox; }
+input[type='checkbox'].purple {
+  display: none; }
 
-/* line 45, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
+/* line 39, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
+input[type='checkbox'].purple + label {
+  padding-left: 20px;
+  padding-left: 1.25rem;
+  background: url("/frontend/web/design/img/sprites/checkbox-label") no-repeat left top 2px;
+  background-size: 11px 12px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle; }
+
+/* line 48, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
+input[type='checkbox'].purple:checked + label {
+  background: url("/frontend/web/design/img/sprites/checkbox-label-checked") no-repeat left top 2px;
+  background-size: 11px 12px; }
+
+/* line 54, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
 input[type='radio'] {
   -webkit-appearance: radio;
   -moz-appearance: radio;
   appearance: radio; }
 
-/* line 55, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
+/* line 64, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
 input[type="text"],
 textarea {
   border-radius: 3px;
@@ -1021,22 +1034,22 @@ textarea {
   display: inline-block;
   width: 100%; }
 
-/* line 67, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
+/* line 76, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
 input[type="text"]:focus,
 textarea:focus {
   outline: none; }
 
-/* line 72, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
+/* line 81, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
 textarea {
   min-height: 175px;
   min-height: 10.9375rem; }
 
-/* line 76, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
+/* line 85, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
 input[type='button'],
 input[type='submit'] {
   border: 0; }
 
-/* line 81, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
+/* line 90, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
 .button {
   line-height: 1.25;
   border-radius: 3px;
@@ -1179,14 +1192,14 @@ input[type='submit'] {
   display: inline-block;
   text-align: center; }
 
-/* line 85, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
+/* line 94, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
 .create-button {
   background-color: #fafafa;
   border-radius: 3px;
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.18);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.18); }
 
-/* line 90, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
+/* line 99, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
 .create-button a {
   padding-bottom: 15px;
   padding-bottom: 0.9375rem;
@@ -1198,7 +1211,7 @@ input[type='submit'] {
   text-align: center;
   text-decoration: none; }
 
-/* line 101, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
+/* line 110, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
 form {
   border-radius: 3px;
   border-radius: 0.1875rem;
@@ -1206,7 +1219,7 @@ form {
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.18);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.18); }
 
-/* line 107, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
+/* line 116, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
 label {
   font-size: 12px;
   font-size: 0.75rem;
@@ -1217,10 +1230,10 @@ label {
   font-weight: 400;
   letter-spacing: .47px; }
 
-/* line 115, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
+/* line 124, /var/www/ddlmaster/frontend/web/design/sass/base/_forms.scss */
 label.required:after {
   background-image: url(sprite.png);
-  background-position: -209px -33px;
+  background-position: -221px -33px;
   width: 4px;
   height: 4px;
   margin: 0 0 9px 2px;
@@ -2211,7 +2224,7 @@ label.required:after {
 /* line 198, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_messages.scss */
 .people__status p:not(:first-child):before {
   background-image: url(sprite.png);
-  background-position: -214px -33px;
+  background-position: -221px -38px;
   width: 4px;
   height: 4px;
   margin: 0 6px 3px;
@@ -2683,12 +2696,12 @@ label.required:after {
   border-bottom: 3px solid #16bc02; }
 
 /* line 1, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper {
+.form-wrapper {
   padding: 24px 23px 30px 23px;
   padding: 1.5rem 1.4375rem 1.875rem 1.4375rem; }
 
 /* line 3, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .actions-bottom {
+.form-wrapper .actions-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2697,24 +2710,24 @@ label.required:after {
   justify-content: space-between; }
 
 /* line 8, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .add-more {
+.form-wrapper .add-more {
   margin-bottom: 38px;
   margin-bottom: 2.375rem; }
 
 /* line 12, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .form-item {
+.form-wrapper .form-item {
   width: 380px;
   width: 23.75rem; }
 
 /* line 15, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .form-item-wrapper {
+.form-wrapper .form-item-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
 /* line 20, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .select2-container--default,
-.wrapper .select2-selection--single {
+.form-wrapper .select2-container--default,
+.form-wrapper .select2-selection--single {
   border-radius: 3px;
   border-radius: 0.1875rem;
   height: 32px;
@@ -2724,26 +2737,26 @@ label.required:after {
   width: 100% !important; }
 
 /* line 29, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .select2-container--default {
+.form-wrapper .select2-container--default {
   border: 0; }
 
 /* line 33, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .select2-container {
+.form-wrapper .select2-container {
   margin-bottom: 29px;
   margin-bottom: 1.8125rem; }
 
 /* line 36, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .select2-container__option {
+.form-wrapper .select2-container__option {
   padding: 8px 15px;
   padding: 0.5rem 0.9375rem; }
 
 /* line 40, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .select2-container--default.select2-container--open .select2-selection__rendered {
+.form-wrapper .select2-container--default.select2-container--open .select2-selection__rendered {
   padding-right: 112px;
   padding-right: 7rem; }
 
 /* line 44, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .select2-container--default .select2-selection--single .select2-selection__arrow b {
+.form-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow b {
   margin-left: -25px;
   margin-left: -1.5625rem;
   border-color: #626262 transparent transparent;
@@ -2751,15 +2764,15 @@ label.required:after {
   margin-top: 1px; }
 
 /* line 52, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .select2 * {
+.form-wrapper .select2 * {
   outline: none; }
 
 /* line 57, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .select2-container .select2-selection__clear {
+.form-wrapper .select2-container .select2-selection__clear {
   display: none; }
 
 /* line 61, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .select2-container .select2-selection__rendered {
+.form-wrapper .select2-container .select2-selection__rendered {
   font-size: 14px;
   font-size: 0.875rem;
   padding: 8px 54px 5px 24px;
@@ -2769,11 +2782,11 @@ label.required:after {
   line-height: 1; }
 
 /* line 69, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .select2-container .select2-selection__arrow {
+.form-wrapper .select2-container .select2-selection__arrow {
   width: 0; }
 
 /* line 74, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .description {
+.form-wrapper .description {
   margin-bottom: 30px;
   margin-bottom: 1.875rem;
   margin-left: 23px;
@@ -2784,15 +2797,15 @@ label.required:after {
   max-width: 23.75rem; }
 
 /* line 80, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .description.top {
+.form-wrapper .description.top {
   margin-left: 0; }
 
 /* line 84, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .description.right-top {
+.form-wrapper .description.right-top {
   margin-top: 0; }
 
 /* line 88, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .description p {
+.form-wrapper .description p {
   line-height: 1.5;
   font-size: 12px;
   font-size: 0.75rem;
@@ -2802,7 +2815,7 @@ label.required:after {
   letter-spacing: .47px; }
 
 /* line 97, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .upload-photo {
+.form-wrapper .upload-photo {
   height: 140px;
   height: 8.75rem;
   margin-left: 22px;
@@ -2814,7 +2827,7 @@ label.required:after {
   position: relative; }
 
 /* line 105, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .upload {
+.form-wrapper .upload {
   height: 140px;
   height: 8.75rem;
   width: 140px;
@@ -2833,11 +2846,11 @@ label.required:after {
   z-index: 2; }
 
 /* line 121, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .upload:focus {
+.form-wrapper .upload:focus {
   outline: none; }
 
 /* line 125, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .upload:after {
+.form-wrapper .upload:after {
   font-size: 12px;
   font-size: 0.75rem;
   -webkit-box-align: center;
@@ -2860,23 +2873,23 @@ label.required:after {
   width: 100%; }
 
 /* line 143, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper.about input[type="text"] {
+.form-wrapper.about input[type="text"] {
   margin-bottom: 14px;
   margin-bottom: 0.875rem; }
 
 /* line 148, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .my-theme input {
+.form-wrapper .my-theme input {
   margin-bottom: 0; }
 
 /* line 152, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .my-themes-wrapper {
+.form-wrapper .my-themes-wrapper {
   margin-bottom: 30px;
   margin-bottom: 1.875rem;
   margin-top: 15px;
   margin-top: 0.9375rem; }
 
 /* line 157, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .add-theme {
+.form-wrapper .add-theme {
   border-radius: 13px;
   border-radius: 0.8125rem;
   padding: 3px 16px;
@@ -2885,30 +2898,30 @@ label.required:after {
   display: inline-block; }
 
 /* line 163, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .add-theme i {
+.form-wrapper .add-theme i {
   font-size: 12px;
   font-size: 0.75rem;
   color: #626262;
   line-height: 1; }
 
 /* line 170, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .my-themes {
+.form-wrapper .my-themes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
 /* line 174, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .my-theme {
+.form-wrapper .my-theme {
   margin-right: 16px;
   margin-right: 1rem;
   position: relative; }
 
 /* line 179, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .my-theme.focused i {
+.form-wrapper .my-theme.focused i {
   display: none; }
 
 /* line 184, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .my-theme input {
+.form-wrapper .my-theme input {
   border-radius: 13px;
   border-radius: 0.8125rem;
   font-size: 12px;
@@ -2926,7 +2939,7 @@ label.required:after {
   width: auto; }
 
 /* line 198, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .my-theme i {
+.form-wrapper .my-theme i {
   font-size: 12px;
   font-size: 0.75rem;
   margin-top: 7px;
@@ -2939,23 +2952,44 @@ label.required:after {
   z-index: 3; }
 
 /* line 209, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .status {
+.form-wrapper .status {
   display: block; }
 
 /* line 212, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .status input {
+.form-wrapper .status input {
   top: 2px;
   top: 0.125rem;
   position: relative; }
 
 /* line 217, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
-.wrapper .status > label {
+.form-wrapper .status > label {
   font-size: 14px;
   font-size: 0.875rem;
   margin-right: 20px;
   margin-right: 1.25rem;
   color: #191919;
   letter-spacing: .54px; }
+
+/* line 226, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
+.form-wrapper.notifications-wrapper .title {
+  margin-bottom: 10px;
+  margin-bottom: 0.625rem; }
+
+/* line 230, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
+.form-wrapper.notifications-wrapper .form-item > label {
+  font-size: 12px;
+  font-size: 0.75rem;
+  color: #333; }
+
+/* line 235, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
+.form-wrapper.notifications-wrapper .form-item {
+  margin-bottom: 31px;
+  margin-bottom: 1.9375rem; }
+
+/* line 239, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
+.form-wrapper.notifications-wrapper .actions {
+  margin-top: 9px;
+  margin-top: 0.5625rem; }
 
 /* line 1, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_questions-answers.scss */
 .questions-answers {
