@@ -1,6 +1,6 @@
 <aside class="sidebar">
   <ul class="sidebar__list-top">
-    <li class="sidebar__item"><a href="#"><i class="material-icons">person</i>Мой профиль</a></li>
+    <li class="sidebar__item"><a href="/site/my-profile-expert"><i class="material-icons">person</i>Мой профиль</a></li>
   </ul>
   <div class="divider-horizontal"></div>
   <span class="title">Настройка профиля</span>

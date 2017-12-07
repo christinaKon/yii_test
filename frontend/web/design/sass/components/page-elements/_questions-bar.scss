@@ -19,7 +19,7 @@
     }
   }
 
-   &.affix {
+  &.affix {
     @include rem(max-width, 263px);
     @include rem(top, 10px);
     position: fixed;

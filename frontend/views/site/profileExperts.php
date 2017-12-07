@@ -18,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
 
         <div class="col-md-9">
-          <form action="#" class="experts about wrapper">
+          <form action="#" class="experts about form-wrapper">
             <div class="form-item">
               <div class="description top"><p>После сохранения данных профиль эксперта будет опубликован, и вы начнете представлять этого человека на сайте. Журналисты смогут получить его комментарии, связавшись с вами</p></div>
             </div>

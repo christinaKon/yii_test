@@ -9605,7 +9605,7 @@ $(document).ready(function() {
 
   addButton = {
     attach: function(settings) {
-      this.button('.people .people__add a', '.people__actions', '.shown');
+      this.button('.people__add a', '.people__actions', '.shown');
     },
     button: function(el, parent, shown) {
       $(el).click(function(e) {
@@ -9684,13 +9684,7 @@ $(document).ready(function() {
         $('.my-theme').last().find('input').focus();
       });
 
-      $(document).on('focus', '.my-theme input', function(event) {
-        $(this).closest('div').addClass('focused');
-      });
-
       $(document).on('blur', '.my-theme input', function(event) {
-        // $('.my-theme').last().find('input').focus();
-        $(this).closest('div').removeClass('focused');
         if (!$(this).val().length || $(this).val() == 'undefined') {
           $(this).closest('div').remove();
         }

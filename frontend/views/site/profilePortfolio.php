@@ -18,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
 
         <div class="col-md-9">
-          <form action="#" class="portfolio wrapper">
+          <form action="#" class="portfolio form-wrapper">
             <div class="form-item title-of-publication">
               <label class="required" for="title">Заголовок публикации</label>
               <input type="text" id="title">

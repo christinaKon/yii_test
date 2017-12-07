@@ -17,7 +17,7 @@ $this->params['breadcrumbs'][] = $this->title;
           <?= $this->render('blocks/sidebarProfile') ?>
         </div>
         <div class="col-md-9">
-          <form action="#" class="about-me about wrapper">
+          <form action="#" class="about-me about form-wrapper">
             <div class="form-item-wrapper status-wrapper">
               <div class="form-item status" id="status">
                 <div class="title"><label for="status" class="required">Статус на сайте</label></div>

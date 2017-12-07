@@ -32,22 +32,25 @@ select:hover {
 // textarea {
 // }
 
-input[type='checkbox'].purple {
-  // appearance: checkbox;
-  display: none;
+input[type='checkbox'] {
+  appearance: checkbox;
 
-  + label {
-    @include rem(padding-left, 20px);
-    background: url('/frontend/web/design/img/sprites/checkbox-label') no-repeat left top 2px;
-    background-size: 11px 12px;
-    cursor:pointer;
-    display:inline-block;
-    vertical-align:middle;
-  }
+  &.purple {
+    display: none;
 
-  &:checked + label {
-    background: url('/frontend/web/design/img/sprites/checkbox-label-checked') no-repeat left top 2px;
-    background-size: 11px 12px;
+    + label {
+      @include rem(padding-left, 20px);
+      background: url('../img/sprites/checkbox-label') no-repeat left top 2px;
+      background-size: 11px 12px;
+      cursor: pointer;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &:checked + label {
+      background: url('../img/sprites/checkbox-label-checked') no-repeat left top 2px;
+      background-size: 11px 12px;
+    }
   }
 }
 
@@ -61,7 +64,7 @@ input[type='radio'] {
   // }
 }
 
-input[type="text"],
+input[type='text'],
 textarea {
   @include rem(border-radius, 3px);
   @include rem(font-size, 12px);

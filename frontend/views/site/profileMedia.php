@@ -18,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
 
         <div class="col-md-9">
-          <form action="#" class="media wrapper">
+          <form action="#" class="media form-wrapper">
             <div class="form-item-wrapper name-of-media">
               <div class="form-item">
                 <label class="required" for="name">Название СМИ</label>

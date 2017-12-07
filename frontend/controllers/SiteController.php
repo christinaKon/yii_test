@@ -411,4 +411,34 @@ class SiteController extends Controller
     {
         return $this->render('profileNotifications');
     }
+
+       /**
+     * Displays My profile journalist page.
+     *
+     * @return mixed
+     */
+    public function actionMyProfileJournalist()
+    {
+        return $this->render('myProfileJournalist');
+    }
+
+       /**
+     * Displays My profile expert page.
+     *
+     * @return mixed
+     */
+    public function actionMyProfileExpert()
+    {
+        return $this->render('myProfileExpert');
+    }
+
+       /**
+     * Displays My profile expert page.
+     *
+     * @return mixed
+     */
+    public function actionProfileAllPeople()
+    {
+        return $this->render('profileAllPeople');
+    }
 }
