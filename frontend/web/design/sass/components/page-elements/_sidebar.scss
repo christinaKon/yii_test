@@ -19,14 +19,25 @@
     &:hover i,
     &.active i {
       color: color(main-green);
+      transition: all .4s ease-in-out;
     }
 
     i {
       @include rem(font-size, 16px);
       @include rem(margin-right, 25px);
       color: color(sidebar-icon);
+      transition: all .4s ease-in-out;
       width: 14px;
     }
+  }
+
+  span.title {
+    @include rem(font-size, 12px);
+    @include rem(margin, -2px 0 5px 0);
+    @include rem(padding-left, 25px);
+    color: color(sidebar-item);
+    display: block;
+    letter-spacing: .47px;
   }
 
   li {
@@ -38,6 +49,11 @@
     justify-content: space-between;
     padding: 1px 0;
 
+    &.purple a,
+    &.purple i {
+      color: color(main-purple);
+    }
+
     &:hover,
     &.active,
     &:hover .number,
@@ -45,12 +61,19 @@
       border-right-color: color(main-green);
       color: color(main-green);
     }
+
+    &.purple:hover a,
+    &.purple:active a {
+      color: color(main-green);
+    }
   }
 
   li.active,
   li.active-trail {
     a,
-    i {
+    i,
+    &.purple a,
+    &.purple i {
       color: color(main-green);
     }
   }

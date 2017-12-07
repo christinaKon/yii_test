@@ -52,6 +52,22 @@ input[type='radio'] {
   // }
 }
 
+input[type="text"] {
+  @include rem(border-radius, 3px);
+  @include rem(margin-bottom, 29px);
+  @include rem(min-height, 32px);
+  @include rem(padding-left, 24px);
+  background-color: color(main-bg);
+  border: 2px solid color(input-border);
+  display: inline-block;
+  width: 100%;
+}
+
+input[type='button'],
+input[type='submit'] {
+  border: 0;
+}
+
 .button {
   @include btn;
 }
@@ -69,5 +85,28 @@ input[type='radio'] {
     font-weight: $semi-bold;
     text-align: center;
     text-decoration: none;
+  }
+}
+
+form {
+  @include rem(border-radius, 3px);
+  background-color: color(main-bg);
+  box-shadow: $main-shadow-small;
+}
+
+label {
+  @include rem(font-size, 12px);
+  @include rem(margin-bottom, 9px);
+  color: color(label);
+  display: inline-block;
+  font-weight: $normal;
+  letter-spacing: .47px;
+
+  &.required:after {
+    @include sprite($label-oval);
+    @include rem(margin, 0 0 9px 2px);
+    color: color(label-oval);
+    content: '';
+    display: inline-block;
   }
 }

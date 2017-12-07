@@ -23,4 +23,30 @@
       font-weight: $semi-bold;
     }
   }
+
+  &__people {
+    @include rem(margin-bottom, 18px);
+
+    ul {
+      display: flex;
+    }
+
+    .status {
+      @include btn;
+      @include rem(margin-right, 15px);
+
+      span {
+        @include rem(font-size, 12px);
+        @include rem(margin-left, 7px);
+        color: color(header-menu);
+        display: inline-block;
+        transition: all .4s ease-in-out;
+      }
+
+      &:hover span {
+        color: color(main-green);
+        transition: all .4s ease-in-out;
+      }
+    }
+  }
 }

@@ -25,7 +25,9 @@ $chroma: add-colors((
   greyy7:        rgba(153, 153, 153, 0.1),
   greyy8:        #eaeaea,
   purple:        #5321a8,
+  purple1:       #673ab7,
   red:           #dc000e,
+  red1:          #fc4848,
   white:         #fff,
   white1:        rgba(255, 255, 255, 0.87),
 ));
@@ -37,6 +39,7 @@ $chroma: add-colors('functional', (
   text:                 'black',
 
   banner-border:        'green',
+  black-btn-text:       'greyy3',
   btn-green-bg:         'green',
   btn-green-shadow-text: 'white',
   btn-green-shadow:     'green5',
@@ -63,6 +66,11 @@ $chroma: add-colors('functional', (
   header-menu:          'greyy3',
   header-separator:     'greyy4',
 
+  input-border:         'greyy1',
+
+  label:                'greyy6',
+  label-oval:           'red1',
+
   main-bg:              'greyy',
   main-black:           'black1',
   main-green:           'green1',
@@ -74,10 +82,13 @@ $chroma: add-colors('functional', (
   messages-grey-icon:   'greyy8',
 
   people-icons:         'greyy6',
+  people-add-to-group:  'greyy5',
+  purple-btn-border:    'purple1',
 
   search-border:        'greyy2',
   select:               'greyy2',
   select-arrows:        'greyy3',
+  select-profile-arrow: 'greyy6',
   select-text:          'greyy5',
   sidebar:              'green3',
   sidebar-icon:         'greyy5',

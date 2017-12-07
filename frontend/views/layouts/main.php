@@ -39,10 +39,10 @@ $this->title = 'Yii2 test-task';
             </div>
             <div class="col-md-9 flex-horisontal">
                 <ul class="header__menu main-menu flex-horisontal">
-                    <li class="header__menu_item"><a href="#">Экспертам</a></li>
-                    <li class="header__menu_item"><a href="#">Журналистам</a></li>
+                    <li class="header__menu_item"><a href="/site/to-experts">Экспертам</a></li>
+                    <li class="header__menu_item"><a href="/site/to-journalists">Журналистам</a></li>
                     <li class="header__menu_item"><a href="#">Тарифы</a></li>
-                    <li class="header__menu_item"><a href="#">Помощь</a></li>
+                    <li class="header__menu_item"><a href="/site/questions-answers">Помощь</a></li>
                 </ul>
                 <div class="header__links flex-horisontal">
                     <a href="#" class="button small green">Начать работу</a>

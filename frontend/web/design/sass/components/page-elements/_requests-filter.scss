@@ -69,11 +69,11 @@
     }
 
     &__rendered {
-      @include lh(21, 14);
       @include rem(font-size, 14px);
       @include rem(padding, 8px 54px 5px 24px);
       color: color(main-black);
       letter-spacing: .54px;
+      line-height: 1;
     }
   }
 }
@@ -100,3 +100,4 @@
     color: color(main-black);
   }
 }
+

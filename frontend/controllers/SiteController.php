@@ -311,4 +311,54 @@ class SiteController extends Controller
     {
         return $this->render('blacklist');
     }
+
+    /**
+     * Displays My contacts page.
+     *
+     * @return mixed
+     */
+    public function actionMyContacts()
+    {
+        return $this->render('myContacts');
+    }
+
+        /**
+     * Displays All contacts page.
+     *
+     * @return mixed
+     */
+    public function actionAllContacts()
+    {
+        return $this->render('allContacts');
+    }
+
+        /**
+     * Displays Me in contacts page.
+     *
+     * @return mixed
+     */
+    public function actionMeInContacts()
+    {
+        return $this->render('meInContacts');
+    }
+
+        /**
+     * Displays Profile My Press Releases page.
+     *
+     * @return mixed
+     */
+    public function actionProfileMyPressReleases()
+    {
+        return $this->render('profileMyPressReleases');
+    }
+
+        /**
+     * Displays Profile Companies page.
+     *
+     * @return mixed
+     */
+    public function actionProfileCompanies()
+    {
+        return $this->render('profileCompanies');
+    }
 }

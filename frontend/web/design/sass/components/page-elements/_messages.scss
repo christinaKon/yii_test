@@ -1,6 +1,4 @@
-.messages,
-.answers,
-.blacklist-people {
+.messages {
   @include rem(margin-bottom, 106px);
 
   &__item {
@@ -163,7 +161,7 @@
   }
 }
 
-.blacklist-people {
+.people {
   @include rem(margin-bottom, 106px);
 
   &__item {
@@ -181,16 +179,28 @@
     @include rem(padding-right, 70px);
     @include rem(padding-top, 12px);
     @include rem(min-width, 550px);
+
+    &.contacts {
+      @include rem(min-width, 488px);
+    }
   }
 
   &__status p {
     @include lh(21, 12);
     @include rem(font-size, 12px);
     @include rem(margin-bottom, 6px);
-    display: inline-block;
+    align-items: center;
+    display: flex;
     font-weight: $normal;
     letter-spacing: .47px;
     text-transform: uppercase;
+
+    &:not(:first-child):before {
+      @include sprite($status-dot);
+      @include rem(margin, 0 6px 3px);
+      content: '';
+      display: block;
+    }
   }
 
   &__name {
@@ -224,6 +234,71 @@
     }
   }
 
+  &__actions {
+    align-items: center;
+    display: flex;
+
+    .people__write {
+      border-right: 0;
+    }
+  }
+
+  &__add {
+    position: relative;
+
+    a {
+      @include btn;
+    }
+
+    i {
+      @include rem(font-size, 12px);
+      @include rem(margin-left, 4px);
+      @include rem(margin-right, 4px);
+      color: color(header-menu);
+      display: inline-block;
+      transition: all .4s ease-in-out;
+    }
+
+    a.smaller {
+      align-items: center;
+      display: flex;
+    }
+
+    &:hover i {
+      color: color(main-green);
+      transition: all .4s ease-in-out;
+    }
+  }
+
+  &__add-list {
+    @include rem(border-radius, 2px);
+    @include rem(min-width, 186px);
+    background-color: color(bg-white);
+    box-shadow: $main-shadow-big;
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+
+    li {
+      @include rem(font-size, 12px);
+      @include rem(padding, 0 16px);
+      @include lh(32, 12);
+    }
+
+    li.add-to-contacts {
+      color: color(main-green);
+    }
+
+    li.add-to-group {
+      color: color(people-add-to-group);
+    }
+
+    li.create-a-group {
+      color: color(main-purple);
+    }
+  }
+
   &-closed {
     @include rem(width, 68px);
     display: flex;
@@ -237,6 +312,7 @@
 
   &__status {
     background: none;
+    display: flex;
     padding: 0;
   }
 }
