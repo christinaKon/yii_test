@@ -9623,15 +9623,54 @@ $(document).ready(function() {
 
   helpScroll = {
     attach: function(settings) {
-      $(window).scroll(function(){
-        var $winTop       = $(window).scrollTop();
-        var $questionsTop = $('.questions-bar').offset().top;
-        if($winTop >= $questionsTop){
-          $('.questions-bar').addClass('affix');
-        } else {
-          $('.questions-bar').removeClass('affix');
-        }
+      this.stickyElement('.questions-bar');
+      this.animatedScroll('.questions-bar');
+      this.activeBar('.questions-bar a');
+    },
+    stickyElement: function(el) {
+      if ($(el).length) {
+        $(document).on("scroll", onScroll);
+        var questionsTop = $(el).offset().top;
+
+        function onScroll(event) {
+          var winTop = $(window).scrollTop();
+          if(winTop >= questionsTop){
+            $(el).addClass('affix');
+          } else {
+            $(el).removeClass('affix');
+          }
+        };
+      }
+    },
+    animatedScroll: function(el) {
+      $(el).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
       });
+    },
+    activeBar: function(el) {
+      if ($(el).length) {
+        var elLength = $(el).length;
+        $(document).on("scroll", onScroll);
+
+        function onScroll(event) {
+          var scrollPos = $(document).scrollTop();
+          for (var i = 0; i < elLength; i++) {
+            var $this       = $(el).eq(i);
+            var $refElement = $($this.attr("href"));
+            if ($refElement.offset().top <= scrollPos && $refElement.offset().top + $refElement.height() - 20 > scrollPos) {
+              $(el).removeClass("active");
+              $this.addClass("active");
+            }
+            else {
+              $this.removeClass("active");
+            }
+          }
+        }
+      }
     }
   };
 

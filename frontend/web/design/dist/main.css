@@ -932,7 +932,7 @@ a:hover {
   transition: all .4s ease-in-out; }
 
 /* line 46, /var/www/ddlmaster/frontend/web/design/sass/base/_base.scss */
-.h1 {
+h1 {
   font-size: 32px;
   font-size: 2rem;
   margin-bottom: 65px;
@@ -2668,12 +2668,12 @@ label.required:after {
   padding-bottom: 1.0625rem;
   border-bottom: 3px solid #16bc02; }
 
-/* line 1, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-press-releases.scss */
+/* line 1, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper {
   padding: 24px 23px 30px 23px;
   padding: 1.5rem 1.4375rem 1.875rem 1.4375rem; }
 
-/* line 3, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-press-releases.scss */
+/* line 3, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .actions-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2682,17 +2682,17 @@ label.required:after {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-/* line 8, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-press-releases.scss */
+/* line 8, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .add-more {
   margin-bottom: 38px;
   margin-bottom: 2.375rem; }
 
-/* line 12, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-press-releases.scss */
+/* line 12, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .form-item {
   width: 380px;
   width: 23.75rem; }
 
-/* line 16, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-press-releases.scss */
+/* line 16, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .select2-container--default,
 .wrapper .select2-selection--single {
   border-radius: 3px;
@@ -2703,26 +2703,26 @@ label.required:after {
   border: 2px solid #bdbdbd;
   width: 100% !important; }
 
-/* line 25, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-press-releases.scss */
+/* line 25, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .select2-container--default {
   border: 0; }
 
-/* line 29, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-press-releases.scss */
+/* line 29, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .select2-container {
   margin-bottom: 29px;
   margin-bottom: 1.8125rem; }
 
-/* line 32, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-press-releases.scss */
+/* line 32, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .select2-container__option {
   padding: 8px 15px;
   padding: 0.5rem 0.9375rem; }
 
-/* line 36, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-press-releases.scss */
+/* line 36, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .select2-container--default.select2-container--open .select2-selection__rendered {
   padding-right: 112px;
   padding-right: 7rem; }
 
-/* line 40, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-press-releases.scss */
+/* line 40, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .select2-container--default .select2-selection--single .select2-selection__arrow b {
   margin-left: -25px;
   margin-left: -1.5625rem;
@@ -2730,15 +2730,15 @@ label.required:after {
   border-width: 3px 3px 0;
   margin-top: 1px; }
 
-/* line 48, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-press-releases.scss */
+/* line 48, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .select2 * {
   outline: none; }
 
-/* line 53, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-press-releases.scss */
+/* line 53, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .select2-container .select2-selection__clear {
   display: none; }
 
-/* line 57, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-press-releases.scss */
+/* line 57, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .select2-container .select2-selection__rendered {
   font-size: 14px;
   font-size: 0.875rem;
@@ -2748,17 +2748,18 @@ label.required:after {
   letter-spacing: .54px;
   line-height: 1; }
 
-/* line 65, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-press-releases.scss */
+/* line 65, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .select2-container .select2-selection__arrow {
   width: 0; }
 
-/* line 70, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-press-releases.scss */
-.wrapper .name-of-company {
+/* line 70, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
+.wrapper .name-of-company,
+.wrapper .name-of-media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-/* line 74, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-press-releases.scss */
+/* line 75, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .description {
   margin-left: 23px;
   margin-left: 1.4375rem;
@@ -2767,7 +2768,7 @@ label.required:after {
   max-width: 380px;
   max-width: 23.75rem; }
 
-/* line 79, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-press-releases.scss */
+/* line 80, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_profile-forms.scss */
 .wrapper .description p {
   line-height: 1.5;
   font-size: 12px;
@@ -2802,14 +2803,6 @@ label.required:after {
   letter-spacing: 0.54px;
   letter-spacing: 0.03375rem; }
 
-/* line 24, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_questions-answers.scss */
-.questions-bar.affix {
-  max-width: 225px;
-  max-width: 14.0625rem;
-  top: 50px;
-  top: 3.125rem;
-  position: fixed; }
-
 /* line 2, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_questions-bar.scss */
 .questions-bar__item {
   margin-bottom: 22px;
@@ -2821,6 +2814,25 @@ label.required:after {
   font-size: 0.875rem;
   letter-spacing: 0.54px;
   letter-spacing: 0.03375rem; }
+
+/* line 10, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_questions-bar.scss */
+.questions-bar__item a:hover,
+.questions-bar__item a.active {
+  color: #191919; }
+
+/* line 15, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_questions-bar.scss */
+.questions-bar__item a:focus {
+  color: #5321a8;
+  outline: none;
+  text-decoration: none; }
+
+/* line 22, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_questions-bar.scss */
+.questions-bar.affix {
+  max-width: 263px;
+  max-width: 16.4375rem;
+  top: 10px;
+  top: 0.625rem;
+  position: fixed; }
 
 /* line 1, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_requests-filter.scss */
 .requests-filter {
@@ -2894,7 +2906,7 @@ label.required:after {
 .requests-filter input::placeholder {
   color: #000; }
 
-/* line 32, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_requests-filter.scss */
+/* line 31, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_requests-filter.scss */
 .requests-filter .select2-container--default,
 .requests-filter .select2-selection--single {
   height: 32px;
@@ -2904,21 +2916,21 @@ label.required:after {
   border-radius: 0;
   width: auto !important; }
 
-/* line 42, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_requests-filter.scss */
+/* line 41, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_requests-filter.scss */
 .requests-filter .select2-container--default:not(:last-child) {
   border-right: 1px solid #eee; }
 
-/* line 46, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_requests-filter.scss */
+/* line 45, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_requests-filter.scss */
 .requests-filter .select2-container__option {
   padding: 8px 15px;
   padding: 0.5rem 0.9375rem; }
 
-/* line 50, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_requests-filter.scss */
+/* line 49, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_requests-filter.scss */
 .requests-filter .select2-container--default.select2-container--open .select2-selection__rendered {
   padding-right: 112px;
   padding-right: 7rem; }
 
-/* line 54, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_requests-filter.scss */
+/* line 53, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_requests-filter.scss */
 .requests-filter .select2-container--default .select2-selection--single .select2-selection__arrow b {
   margin-left: -25px;
   margin-left: -1.5625rem;
@@ -2926,15 +2938,15 @@ label.required:after {
   border-width: 3px 3px 0;
   margin-top: 1px; }
 
-/* line 62, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_requests-filter.scss */
+/* line 61, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_requests-filter.scss */
 .requests-filter .select2 * {
   outline: none; }
 
-/* line 67, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_requests-filter.scss */
+/* line 66, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_requests-filter.scss */
 .requests-filter .select2-container .select2-selection__clear {
   display: none; }
 
-/* line 71, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_requests-filter.scss */
+/* line 70, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_requests-filter.scss */
 .requests-filter .select2-container .select2-selection__rendered {
   font-size: 14px;
   font-size: 0.875rem;
@@ -2944,24 +2956,24 @@ label.required:after {
   letter-spacing: .54px;
   line-height: 1; }
 
-/* line 82, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_requests-filter.scss */
+/* line 81, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_requests-filter.scss */
 .select2-container .select2-search.select2-search--dropdown {
   display: none; }
 
-/* line 86, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_requests-filter.scss */
+/* line 85, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_requests-filter.scss */
 .select2-container .select2-dropdown {
   background-color: #fafafa;
   border: 0;
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.12); }
 
-/* line 92, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_requests-filter.scss */
+/* line 91, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_requests-filter.scss */
 .select2-container.select2-container--default .select2-results__option {
   font-size: 12px;
   font-size: 0.75rem;
   color: #afafaf; }
 
-/* line 97, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_requests-filter.scss */
+/* line 96, /var/www/ddlmaster/frontend/web/design/sass/components/page-elements/_requests-filter.scss */
 .select2-container.select2-container--default .select2-results__option--highlighted[aria-selected] {
   font-size: 12px;
   font-size: 0.75rem;

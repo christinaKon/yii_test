@@ -12,6 +12,9 @@
   }
 
   input {
+    @include placeholder {
+      color: color(text);
+    }
     @include rem(font-size, 14px);
     @include rem(height, 32px);
     @include rem(padding, 8px 14px 8px 52px);
@@ -23,10 +26,6 @@
     display: flex;
     justify-content: center;
     width: 100%;
-
-    @include placeholder {
-      color: color(text);
-    }
   }
 
   .select2-container--default,

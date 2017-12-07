@@ -43,7 +43,7 @@ a {
   }
 }
 
-.h1 {
+h1 {
   @include rem(font-size, 32px);
   @include rem(margin-bottom, 65px);
   color: color(main-black);

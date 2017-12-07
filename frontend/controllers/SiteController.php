@@ -361,4 +361,24 @@ class SiteController extends Controller
     {
         return $this->render('profileCompanies');
     }
+
+        /**
+     * Displays Profile Media page.
+     *
+     * @return mixed
+     */
+    public function actionProfileMedia()
+    {
+        return $this->render('profileMedia');
+    }
+
+        /**
+     * Displays Profile Portfolio page.
+     *
+     * @return mixed
+     */
+    public function actionProfilePortfolio()
+    {
+        return $this->render('profilePortfolio');
+    }
 }

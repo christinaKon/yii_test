@@ -6,10 +6,10 @@
   <span class="title">Настройка профиля</span>
   <ul class="sidebar__list-center">
     <li class="sidebar__item"><a href="#"><i class="material-icons">accessibility</i>Обо мне</a></li>
-    <li class="sidebar__item"><a href="#"><i class="material-icons">phonelink</i>Мои СМИ</a></li>
+    <li class="sidebar__item"><a href="/site/profile-media"><i class="material-icons">phonelink</i>Мои СМИ</a></li>
     <li class="sidebar__item"><a href="#"><i class="material-icons">school</i>Мои эксперты</a></li>
-    <li class="sidebar__item"><a href="#"><i class="material-icons">business</i>Мои компании</a></li>
-    <li class="sidebar__item"><a href="#"><i class="material-icons">business_center</i>Моё портфолио</a></li>
+    <li class="sidebar__item"><a href="/site/profile-companies"><i class="material-icons">business</i>Мои компании</a></li>
+    <li class="sidebar__item"><a href="/site/profile-portfolio"><i class="material-icons">business_center</i>Моё портфолио</a></li>
     <li class="sidebar__item"><a href="/site/profile-my-press-releases"><i class="material-icons">business_center</i>Мои пресс-релизы</a></li>
   </ul>
   <div class="divider-horizontal"></div>

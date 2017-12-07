@@ -6,5 +6,22 @@
       @include rem(font-size, 14px);
       @include rem(letter-spacing, .54px);
     }
+
+    a:hover,
+    a.active {
+      color: color(main-black);
+    }
+
+    a:focus {
+      color: color(main-purple);
+      outline: none;
+      text-decoration: none;
+    }
+  }
+
+   &.affix {
+    @include rem(max-width, 263px);
+    @include rem(top, 10px);
+    position: fixed;
   }
 }
