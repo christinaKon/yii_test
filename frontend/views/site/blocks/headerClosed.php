@@ -12,7 +12,7 @@
           <li class="header-closed__menu_item"><a href="#" class="active">Запросы</a></li>
           <li class="header-closed__menu_item"><a href="#">Люди</a></li>
           <li class="header-closed__menu_item"><a href="#">Пресс - Релизы</a></li>
-          <li class="header-closed__menu_item"><a href="#">Сообщения<span class="header-closed__new_message">12</span></a></li>
+          <li class="header-closed__menu_item"><a href="/site/chats">Сообщения<span class="header-closed__new_message">12</span></a></li>
         </ul>
 
         <div class="header-closed__settings flex-horisontal">

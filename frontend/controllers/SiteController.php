@@ -441,4 +441,14 @@ class SiteController extends Controller
     {
         return $this->render('profileAllPeople');
     }
+
+       /**
+     * Displays chats page.
+     *
+     * @return mixed
+     */
+    public function actionChats()
+    {
+        return $this->render('chats');
+    }
 }
