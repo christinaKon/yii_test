@@ -264,7 +264,8 @@
       display: flex;
     }
 
-    &:hover i {
+    &:hover i,
+    a.active i {
       color: color(main-green);
       transition: all .4s ease-in-out;
     }

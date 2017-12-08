@@ -51,6 +51,8 @@ $(document).ready(function() {
     },
     button: function(el, parent, shown) {
       $(el).click(function(e) {
+        $(this).toggleClass('active');
+
         if ($(parent).find(shown).length && !$(this).hasClass('shown')) {
           $(parent).find(shown).removeClass('shown').next().hide(400);
           $(this).addClass('shown').next().show(400);

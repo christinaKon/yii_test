@@ -31,6 +31,7 @@ $this->params['breadcrumbs'][] = $this->title;
                   <p>Пишу много: от глянцевых историй до отраслевых профессиональных материалов. Сотрудничаю с разными изданиями как независимый журналист.</p>
                 </div>
                 <div class="my-profile__theme_wrapper">
+                  <span class="grey-text">Мои темы</span>
                   <span class="my-profile__theme">Lorem ipsum.</span>
                   <span class="my-profile__theme">Lorem ipsum.</span>
                   <span class="my-profile__theme">Lorem ipsum.</span>
@@ -54,7 +55,7 @@ $this->params['breadcrumbs'][] = $this->title;
                   </div>
                   <div class="my-profile__block">
                     <div class="my-profile__block_inner">
-                      <div class="my-profile__block_title"></div>
+                      <div class="my-profile__block_title">Фабрика новостей</div>
                       <div class="my-profile__block_post">PR-менеджер</div>
                       <div class="grey-text">Санкт-Петербург</div>
                       <div class="my-profile__block_text"><a href="www.nfactory.ru">www.nfactory.ru</a></div>
@@ -62,7 +63,7 @@ $this->params['breadcrumbs'][] = $this->title;
                   </div>
                   <div class="my-profile__block">
                     <div class="my-profile__block_inner">
-                      <div class="my-profile__block_title"></div>
+                      <div class="my-profile__block_title">Фабрика новостей</div>
                       <div class="my-profile__block_post">PR-менеджер</div>
                       <div class="grey-text">Санкт-Петербург</div>
                       <div class="my-profile__block_text"><a href="www.kelnik.ru">www.kelnik.ru</a></div>
@@ -70,21 +71,20 @@ $this->params['breadcrumbs'][] = $this->title;
                   </div>
                 </div>
                 <div class="my-profile__statistic_wrapper">
-                  <div class="grey-text">Мои СМИ</div>
                   <div class="my-profile__statistic_row">
                     <div class="my-profile__statistic">
                       <div class="grey-text">Мои питчи</div>
                       <div class="my-profile__statistic_number big">8</div>
                     </div>
                     <div class="my-profile__statistic">
-                      <div class="grey-text">Конверсия питчей</div>
-                      <div class="my-profile__statistic_number big">50%</div>
+                      <div class="grey-text">Принятые питчи</div>
+                      <div class="my-profile__statistic_number small">14</div>
                     </div>
                   </div>
                   <div class="my-profile__statistic_row">
                     <div class="my-profile__statistic">
-                      <div class="grey-text">Принятые питчи</div>
-                      <div class="my-profile__statistic_number small">14</div>
+                      <div class="grey-text">Конверсия питчей</div>
+                      <div class="my-profile__statistic_number big">50%</div>
                     </div>
                     <div class="my-profile__statistic">
                       <div class="grey-text">Средняя конверсия на сайте</div>
@@ -93,49 +93,52 @@ $this->params['breadcrumbs'][] = $this->title;
                   </div>
                 </div>
                 <div class="my-profile__block_wrapper">
+                  <div class="grey-text">Мои СМИ</div>
                   <div class="my-profile__block">
                     <div class="my-profile__block_inner">
                       <div class="my-profile__block_title">Theproperty.ru</div>
                       <div class="my-profile__block_post">Журналист</div>
                       <div class="grey-text">Санкт-Петербург</div>
                       <div class="my-profile__block_text"><a href="www.theproperty.ru">www.theproperty.ru</a></div>
-                      <div class="my-profile__block_status"><i class="material-icons">verified_user</i>Подтверждено</div>
+                      <div class="my-profile__block_status grey-text"><i class="material-icons">verified_user</i>Подтверждено</div>
                     </div>
                   </div>
                 </div>
                 <div class="my-profile__statistic_wrapper">
-                  <div class="my-profile__statistic_row">
+                  <div class="my-profile__statistic_row requests">
                     <div class="my-profile__statistic">
                       <div class="grey-text">Мои запросы</div>
                       <div class="my-profile__statistic_number big">28</div>
                     </div>
                     <div class="my-profile__statistic">
-                      <div class="grey-text">Полученные питчи</div>
-                      <div class="my-profile__statistic_number big">41</div>
-                    </div>
-                    <div class="my-profile__statistic">
-                      <div class="grey-text">Репосты в соцсетях</div>
-                      <div class="my-profile__statistic_number big">12</div>
-                    </div>
-                  </div>
-                  <div class="my-profile__statistic_row">
-                    <div class="my-profile__statistic">
                       <div class="grey-text">Мои публикации</div>
                       <div class="my-profile__statistic_number small">19</div>
+                    </div>
+                  </div>
+                  <div class="my-profile__statistic_row requests">
+                    <div class="my-profile__statistic">
+                      <div class="grey-text">Полученные питчи</div>
+                      <div class="my-profile__statistic_number big">41</div>
                     </div>
                     <div class="my-profile__statistic">
                       <div class="grey-text">Принятые питчи</div>
                       <div class="my-profile__statistic_number small">30</div>
                     </div>
                   </div>
+                  <div class="my-profile__statistic_row requests">
+                    <div class="my-profile__statistic">
+                      <div class="grey-text">Репосты в соцсетях</div>
+                      <div class="my-profile__statistic_number big">12</div>
+                    </div>
+                  </div>
                 </div>
                 <div class="my-profile__publication_wrapper">
                   <div class="grey-text">Ссылки на мои публикации</div>
-                  <div class="my-profile__publication"><a href="#">Кому выгоден энергоэффективный капремонт (стр.67</a><a href="#" class="button">Запрос</a></div>
-                  <div class="my-profile__publication"><a href="#">Кому выгоден энергоэффективный капремонт (стр.67</a><a href="#" class="button">Запрос</a></div>
-                  <div class="my-profile__publication"><a href="#">Кому выгоден энергоэффективный капремонт (стр.67</a><a href="#" class="button">Запрос</a></div>
-                  <div class="my-profile__publication"><a href="#">Кому выгоден энергоэффективный капремонт (стр.67</a><a href="#" class="button">Запрос</a></div>
-                  <div class="my-profile__publication"><a href="#">Кому выгоден энергоэффективный капремонт (стр.67</a><a href="#" class="button">Запрос</a></div>
+                  <div class="my-profile__publication"><a href="#">Кому выгоден энергоэффективный капремонт (стр.67)</a><a href="#" class="button shadow-white-black">Запрос</a></div>
+                  <div class="my-profile__publication"><a href="#">Кому выгоден энергоэффективный капремонт (стр.67)</a><a href="#" class="button shadow-white-black">Запрос</a></div>
+                  <div class="my-profile__publication"><a href="#">Кому выгоден энергоэффективный капремонт (стр.67)</a><a href="#" class="button shadow-white-black">Запрос</a></div>
+                  <div class="my-profile__publication"><a href="#">Кому выгоден энергоэффективный капремонт (стр.67)</a><a href="#" class="button shadow-white-black">Запрос</a></div>
+                  <div class="my-profile__publication"><a href="#">Кому выгоден энергоэффективный капремонт (стр.67)</a><a href="#" class="button shadow-white-black">Запрос</a></div>
                 </div>
                 <div class="my-profile__press_release_wrapper">
                   <div class="grey-text">Мои пресс-релизы.</div>

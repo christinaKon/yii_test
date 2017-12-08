@@ -38,6 +38,7 @@ a {
   transition: all .4s ease-in-out;
 
   &:hover {
+    color: color(main-black);
     text-decoration: none;
     transition: all .4s ease-in-out;
   }
@@ -68,4 +69,14 @@ h4 {
   @include rem(font-size, 18px);
   color: color(main-purple);
   font-weight: $normal;
+}
+
+.grey-text {
+  @include rem(font-size, 12px);
+  @include rem(margin-bottom, 9px);
+  color: color(label);
+  display: inline-block;
+  font-weight: $normal;
+  letter-spacing: .47px;
+  width: 100%;
 }

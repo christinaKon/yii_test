@@ -7,6 +7,18 @@
   display: inline-block
   font-weight: $semi-bold
 
+  &.shadow-white-black
+    +rem(font-size, 12px)
+    +rem(padding, 9px 18px 10px 18px)
+    background-color: color(bg-white)
+    box-shadow: $main-shadow-big
+    color: color(black-btn-text)
+
+    &:hover
+      background-color: color(main-bg)
+      box-shadow: $main-shadow-small
+
+
   &.black
     color: color(black-btn-text)
 
@@ -79,7 +91,8 @@
     font-weight: $normal
     line-height: 1
 
-    &:hover
+    &:hover,
+    &.active
       background-color: color(bg-white)
       box-shadow: $main-shadow-big
       color: color(main-green)
@@ -94,6 +107,17 @@
     color: color(btn-green-shadow-text)
     display: inline-block
     text-align: center
+
+  &.shadow-big
+    +rem(padding, 8px 36px)
+    background-color: color(bg-white)
+    box-shadow: $main-shadow-big
+
+    &:hover
+      background-color: color(main-bg)
+      box-shadow: $main-shadow-small
+      color: color(main-black);
+
 
 =slick-dots
   .slick-dots

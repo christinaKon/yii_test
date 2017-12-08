@@ -1,0 +1,210 @@
+.my-profile {
+  display: flex;
+
+  &__wrapper {
+    @include rem(border-radius, 3px);
+    @include rem(margin-bottom, 118px);
+    @include rem(padding, 17px 32px 25px 32px);
+    background-color: color(main-bg);
+    box-shadow: $main-shadow-small;
+  }
+
+  &__left_col {
+    @include rem(padding-right, 32px);
+    border-right: 1px solid color(my-profily-border);
+    flex: 1 0 auto;
+    text-align: center;
+  }
+
+  &__avatar {
+    @include rem(margin-bottom, 18px);
+  }
+
+  &__name {
+    @include lh(28, 18);
+    @include rem(font-size, 18px);
+    @include rem(margin, 6px 0 14px 0);
+    color: color(main-black);
+  }
+
+  &__likes {
+    @include rem(margin-top, 2px);
+
+    i,
+    span {
+      @include rem(font-size, 18px);
+      color: color(likes);
+      letter-spacing: .7px;
+    }
+
+    i {
+      @include rem(margin-bottom, 2px);
+      @include rem(margin-right, 4px);
+      display: inline-block;
+      position: relative;
+      top: 1px;
+    }
+  }
+
+  &__right_col {
+    @include rem(padding-left, 31px);
+  }
+
+  &__about_me {
+    @include rem(margin-bottom, 20px);
+
+    p {
+      @include lh(21, 14);
+    }
+  }
+
+  &__theme {
+    @include rem(border-radius, 13px);
+    @include rem(font-size, 12px);
+    @include rem(margin-bottom, 10px);
+    @include rem(margin-right, 13px);
+    @include rem(padding, 3px 16px);
+    background-color: color(add-theme-bg);
+    color: color(theme-text);
+    display: inline-block;
+
+    &_wrapper {
+      @include rem(margin-bottom, 20px);
+    }
+  }
+
+  &.all-people .my-profile__block {
+    @include rem(width, 273px);
+  }
+
+  &__block {
+    @include rem(border-radius, 3px);
+    @include rem(margin, 0 13px 16px 13px);
+    @include rem(padding, 18px);
+    @include rem(width, 277px);
+    background-color: color(main-bg);
+    box-shadow: $main-shadow-small;
+
+    &_wrapper > .grey-text {
+      @include rem(margin-left, 13px);
+    }
+
+    &_wrapper {
+      @include rem(margin, 0 -13px);
+      @include rem(margin-bottom, 12px);
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &_title {
+      @include lh(24, 16);
+      @include rem(font-size, 16px);
+      @include rem(margin-bottom, 6px);
+      letter-spacing: .62px;
+    }
+
+    &_post,
+    &_text a {
+      @include lh(18, 12);
+      @include rem(font-size, 12px);
+      letter-spacing: .47px;
+    }
+
+    &_post {
+      @include rem(margin-bottom, 10px);
+    }
+
+    &_status {
+      @include rem(margin-top, 20px);
+      display: flex;
+    }
+
+    &_status i {
+      @include rem(font-size, 14px);
+      @include rem(margin-right, 3px);
+      color: color(main-green);
+    }
+  }
+
+  &__statistic {
+    .grey-text {
+      margin-bottom: 0;
+    }
+
+    &_wrapper {
+      @include rem(margin-bottom, 30px);
+    }
+
+    &_number.big {
+      @include lh(60, 48);
+      @include rem(font-size, 48px);
+    }
+
+    &_number.small {
+      @include lh(39, 26);
+      @include rem(font-size, 26px);
+    }
+
+    &_row.requests {
+      @include rem(margin-right, 47px);
+    }
+
+    &_row {
+      @include rem(margin-bottom, 10px);
+      @include rem(margin-right, 31px);
+      display: flex;
+      flex-direction: column;
+    }
+
+    &_wrapper {
+      display: flex;
+    }
+  }
+
+  &__publication {
+    @include rem(margin-bottom, 20px);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    &_wrapper {
+      @include rem(margin-bottom, 30px);
+    }
+  }
+
+  &__press_release {
+    @include lh(24, 16);
+    @include rem(border-radius, 3px);
+    @include rem(font-size, 16px);
+    @include rem(min-height, 132px);
+    @include rem(margin, 0 13px 16px 13px);
+    @include rem(padding, 18px);
+    @include rem(width, 277px);
+    background-color: color(main-bg);
+    box-shadow: $main-shadow-small;
+
+    &_wrapper .grey-text {
+      @include rem(margin-left, 13px);
+    }
+
+    &_wrapper {
+      @include rem(margin, 0 -13px);
+      @include rem(margin-bottom, -16px);
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__buttons {
+    &_write {
+      @include rem(margin-bottom, 10px);
+      @include rem(margin-top, 25px);
+    }
+
+    .people__add a {
+      @include rem(font-size, 14px);
+      @include rem(padding-left, 33px);
+    }
+  }
+}
+
